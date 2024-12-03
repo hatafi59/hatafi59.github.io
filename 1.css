@@ -276,8 +276,16 @@ td {
 	justify-items: center;
 	text-align: center;
 }
-
+.loading-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 24px;
+  animation: rotate 1s linear infinite;
+}
 .course-card {
+  position: relative;
 	width: 90%;
 	max-width: 250px;
 	border: 1px solid rgb(45, 125, 177);
@@ -535,6 +543,9 @@ h1 {
     width: 100px; 
     height: 80px; 
 }
+
+
+
    
    .card-alg-analyse-details {
     color: black;
@@ -859,4 +870,19 @@ h1 {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* ------------------------------ */
+.cssnav{
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  border-color: #2f2f2f;
+  box-shadow: 0 4px 8px rgba(10, 116, 165, 0.1);
+  text-align: center;
+  color: #ae1919;
+  font-size: 90%;
+  font-weight: 700;
+  cursor: pointer;
+
+
 }

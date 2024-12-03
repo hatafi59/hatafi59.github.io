@@ -29,7 +29,7 @@
 	background-color: transparent;
 	border-color: #FFFFFF;
   color: #FFFFFF;
-	font-size: 12px;
+	font-size: cover;
   cursor: pointer;
 	font-weight: bold;
 	padding: 12px 45px;
@@ -165,6 +165,8 @@ input {
 
 .overlay-left {
 	transform: translateX(-20%);
+
+
 }
 
 .container-inscription.right-panel-active .overlay-left {

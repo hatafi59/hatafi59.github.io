@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <script src="script.js"></script>
     <header>
 
         <div class="logo">
@@ -93,164 +92,44 @@
                         </svg>
                     </button>
                 </li>
+                    <div id="chrono">Temps en ligne : 00:00:00</div>
             </ul>
         </nav>
-        <div class="button-container">
-            <button class="cssbuttons-io-button">
-                se connecter
-                <div class="icon">
-                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
-            </button>
 
-            <button class="cssbuttons-io-button">
-                S'inscrire
-                <div class="icon">
-                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
+
+            <button class="cssnav" id="signUpNav" onclick="redirectTo('inscription.html')">
+                Vous etes déconnecté(e)
             </button>
-        </div>
+            
+        
     </header>
     <main
         style="display: flex; justify-content: center; align-items: center; min-height: 100vh;margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;">
 
-        <!-- <div class="wrapper">
-        <span class="rotate-bg"></span>
-        <span class="rotate-bg2"></span>
-
-        <div class="form-box login">
-            <h2 class="title animation" style="--i:0; --j:21">Login</h2>
-            <form action="#">
-
-                <div class="input-box animation" style="--i:1; --j:22">
-                    <input type="text" required>
-                    <label for="">Username</label>
-                    <i class='bx bxs-user'></i>
-                </div>
-
-                <div class="input-box animation" style="--i:2; --j:23">
-                    <input type="password" required>
-                    <label for="">Password</label>
-                    <i class='bx bxs-lock-alt'></i>
-                </div>
-                <button type="submit" class="btn animation" style="--i:3; --j:24">Login</button>
-                <div class="linkTxt animation" style="--i:5; --j:25">
-                    <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
-                </div>
-            </form>
-        </div>
-
-        <div class="info-text login">
-            <h2 class="animation" style="--i:0; --j:20">Welcome Back!</h2>
-            <p class="animation" style="--i:1; --j:21">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti,rem?</p>
-        </div>
-
-
-
-
-
-
-
-        <div class="form-box register">
-
-            <h2 class="title animation" style="--i:17; --j:0">Sign Up</h2>
-
-            <form action="#">
-
-                <div class="input-box animation" style="--i:18; --j:1">
-                    <input type="text" required>
-                    <label for="">Username</label>
-                    <i class='bx bxs-user'></i>
-                </div>
-
-                <div class="input-box animation" style="--i:19; --j:2">
-                    <input type="email" required>
-                    <label for="">Email</label>
-                    <i class='bx bxs-envelope'></i>
-                </div>
-
-                <div class="input-box animation" style="--i:20; --j:3">
-                    <input type="password" required>
-                    <label for="">Password</label>
-                    <i class='bx bxs-lock-alt'></i>
-                </div>
-
-                <button type="submit" class="btn animation" style="--i:21;--j:4">Sign Up</button>
-
-                <div class="linkTxt animation" style="--i:22; --j:5">
-                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
-                </div>
-
-            </form>
-        </div>
-
-        <div class="info-text register">
-            <h2 class="animation" style="--i:17; --j:0;">Welcome Back!</h2>
-            <p class="animation" style="--i:18; --j:1;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti,rem?</p>
-        </div>
-
-    </div>
- -->
         <div class="container-inscription" id="container">
-            <div class="form-container sign-up-container">
-                <form class="form-inscription" action="#">
-                    <h1>Create Account</h1>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <span>or use your email for registration</span>
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <button class="button-inscription">Sign Up</button>
-                </form>
-            </div>
+
             <div class="form-container sign-in-container">
                 <form class="form-inscription" action="#">
-                    <h1>Sign in</h1>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <span>or use your account</span>
+                    <h2>Connecter-vous</h2>
                     <input type="email" placeholder="Email" />
                     <input type="password" placeholder="Password" />
-                    <a href="#">Forgot your password?</a>
-                    <button class="button-inscription">Sign In</button>
                 </form>
             </div>
             <div class="overlay-container">
                 <div class="overlay">
                     <div class="overlay-panel overlay-left">
                         <h1>Welcome Back!</h1>
-                        <p>
-                            To keep connected with us please login with your personal info
-                        </p>
-                        <button class="button-inscription-ghost" id="signIn">Sign In</button>
+                        <p>Pour se déconnecter de notre site, veuillez cliquer sur le bouton ci-dessous</p>
+                        <button class="button-inscription-ghost" id="signIn">se connecter /se déconnecter</button>
                     </div>
                     <div class="overlay-panel overlay-right">
                         <h1>Hello, Friend!</h1>
-                        <p>Enter your personal details and start journey with us</p>
-                        <button class="button-inscription-ghost" id="signUp">Sign Up</button>
+                        <p>Entrer vos détails personnels et commencez la journée avec nous</p>
+                        <button class="button-inscription-ghost" id="signUp">se connecter  / se déconnecter</button>
                     </div>
                 </div>
             </div>
         </div>
-
-
 
 
 
@@ -345,19 +224,9 @@
             </div>
         </div>
     </footer>
-    <script>
-        const signUpButton = document.getElementById('signUp');
-        const signInButton = document.getElementById('signIn');
-        const container = document.getElementById('container');
-
-        signUpButton.addEventListener('click', () => {
-            container.classList.add('right-panel-active');
-        });
-
-        signInButton.addEventListener('click', () => {
-            container.classList.remove('right-panel-active');
-        });
-    </script>
+    <script src="script.js"></script>
+    <script src="chrono.js"></script>
+    <script src="inscription.js"></script>
 
 </body>
 

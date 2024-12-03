@@ -10,7 +10,8 @@
 
 <body>
     <script src="script.js"></script>
-    <header>
+    <script src="chrono.js"></script>
+    <script src="inscription.js"></script>    <header>
 
         <div class="logo">
             <img src="logosite.png" alt="Logo du site">
@@ -88,31 +89,14 @@
                         </svg>
                     </button>
                 </li>
-            </ul>
-        </nav>
-        <div class="button-container">
-            <button class="cssbuttons-io-button">
-                se connecter
-                <div class="icon">
-                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
-            </button>
+                <div id="chrono">Temps en ligne : 00:00:00</div>
+        </ul>
+    </nav>
 
-            <button class="cssbuttons-io-button">
-                S'inscrire
-                <div class="icon">
-                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
-            </button>
-        </div>
+
+        <button class="cssnav" id="signUpNav" onclick="redirectTo('inscription.html')">
+            Vous etes déconnecté(e)
+        </button>
     </header>
     <main>
         <h1 class="center">Ensembles et applications</h1>
