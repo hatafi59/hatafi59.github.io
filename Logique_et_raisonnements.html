@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours Universitaires en Ligne</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <header>
+
+        <div class="logo">
+            <img src="logosite.png" alt="Logo du site">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <button class="button-nav" onclick="redirectTo('Accueil.html')">
+                        Accueil
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+
+                    </button>
+
+                </li>
+                <li>
+                    
+                    <div class="dropdown-container">
+                        <button class="button-nav" >
+                            Cours
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                <path
+                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <ul class="nav__ul">
+                                <li style="text-align: center;"><a href="algebrecours.html">algebre</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                        </path>
+                                    </svg>
+                                </li>
+                                <li style="text-align: center;"><a href="Analysecours.html">Analyse</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                        </path>
+                                    </svg>
+                                </li>
+
+                                <li style="text-align: center;"><a href="resumé.html">Resumé</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                        </path>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="button-nav" onclick="redirectTo('Accueil.html')">
+                        Contact
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="button-nav" onclick="redirectTo('Accueil.html')">
+                        À propos
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div class="button-container">
+            <button class="cssbuttons-io-button">
+                se connecter
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+
+            <button class="cssbuttons-io-button">
+                S'inscrire
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </header>
+    <main id="cours_logique">
+        <h1  style="text-align: center;">Logique et raisonnements</h1>
+        <p style="text-indent: 2em;">Les mathématiques sont un langage pour s’exprimer rigoureusement, adapté aux phénomènes complexes,
+            qui rend les calculs exacts et vérifiables. Le raisonnement est le moyen de valider — ou d’infirmer — une
+            hypothèse et de l’expliquer à autrui.</p>
+        <h2>Objectifs :</h2>
+        <ul>
+            <li>Comprendre les concepts de base de la logique mathématique.</li>
+            <li>Apprendre à raisonner de manière rigoureuse et structurée.</li>
+            <li>Acquérir des compétences en résolution de problèmes.</li>
+            <li>Se familiariser avec les outils de raisonnement mathématique.</li>
+        </ul>
+        <h2>Contenu :</h2>
+        <ul>
+            <li>Logique :</li>
+            <ul>
+                <li>Les assertions ;</li>
+                <li>Les quantificateurs ;</li>
+            </ul>
+            <li>Raisonnements :</li>
+            <ul>
+                <li>Raisonnement direct ; </li>
+                <li>Raisonnement cas par cas ;</li>
+                <li>Raisonnement par contraposée ;</li>
+                <li>Raisonnement par l’absurde ;</li>
+                <li>Raisonnement par cotre-exemple ;</li>
+                <li>Raisonnement par récurrence.</li>
+            </ul>
+        </ul>
+        <h2>1. Logique:</h2>
+        <h3>1.1. Assertions:</h3>
+        <p>Une assertion est une phrase soit vraie, soit fausse, pas les deux en même temps.
+        <p><strong>Exemples :</strong></p>
+            <ul>
+                <li>« Il pleut. »</li>
+                <li>« Je suis plus grand que toi. »</li>
+                <li>« 2 + 2 = 4 »</li>
+                <li>« 2 × 3 = 7 »</li>
+                <li>« Pour tout x ∈ ℝ, on a x² > 0. »</li>
+                <li>« Pour tout z ∈ ℂ, on a |z| = 1. »</li>
+            </ul>
+            Si P est une assertion et Q est une autre assertion, nous allons définir de nouvelles assertions construites à
+            partir de P et de Q.<br><br>
+            <b>L’opérateur logique « et » : </b><br>
+            L’assertion « P et Q » est vraie si P est vraie et Q est vraie. L’assertion « P et Q » est fausse sinon.
+            On résume ceci en une <span style="color: blue;">table de vérité :</span> <br>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>P et Q</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>F</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>V</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="text-align: center;"><caption>Table de vérité de « P et Q »</caption></p><br>
+            Par exemple si P est l’assertion « Cette carte est un as » et Q l’assertion « Cette carte est coeur » alors l’assertion
+            « P et Q » est vraie si la carte est l’as de coeur et est fausse pour toute autre carte.<br><br>
+            <b>L’opérateur logique « ou »</b> <br>
+            L’assertion « P ou Q » est vraie si l’une (au moins) des deux assertions P ou Q est vraie. L’assertion « P ou
+            Q » est fausse si les deux assertions P et Q sont fausses.<br>
+            On reprend ceci dans la table de vérité :<br>
+            <table  border="1" >
+                
+                <tr>
+                    <th class="p">P ou Q</th>
+                    <th class="v">V</th>
+                    <th class="f">F</th>
+                </tr>
+                <tr>
+                    <td class="v">V</td>
+                    <td class="v">V</td>
+                    <td class="f">V</td>
+                </tr>
+                <tr>
+                    <td class="f">F</td>
+                    <td class="f">V</td>
+                    <td class="f">F</td>
+                </tr>
+            </table>
+            <p style="text-align: center;"><caption>Table de vérité de « P ou Q »</caption></p><br>
+            Si P est l’assertion « Cette carte est un as » et Q l’assertion « Cette carte est coeur » alors l’assertion « P ou Q »
+            est vraie si la carte est un as ou bien un coeur (en particulier elle est vraie pour l’as de coeur).
+            Remarque.<br>
+            Pour définir les opérateurs « ou », « et » on fait appel à une phrase en français utilisant les mots ou, et ! Les
+            tables de vérités permettent d’éviter ce problème.<br><br>
+            <b> La négation « non »</b><br>
+            L’assertion « non P » est vraie si P est fausse, et fausse si P est vraie.<br>
+            <table  border="1" >
+                
+                <tr>
+                    <th class="p">P</th>
+                    <th class="v">V</th>
+                    <th class="f">F</th>
+                </tr>
+                <tr>
+                    <td class="v">non P</td>
+                    <td class="v">F</td>
+                    <td class="f">V</td>
+                </tr>
+            </table>
+            <p style="text-align: center;"><caption>Table de vérité de « non P »</caption></p><br>
+
+
+
+            <b>L’implication « ⇒ »</b>
+            <p>La définition mathématique est la suivante :</p>
+            <div class="border">
+                <p style="text-align: center;"><caption>L’assertion « P ⇒ Q » est équivalente à « (non P) ou Q ».</caption></p>
+            </div>
+            <p>Sa table de vérité est donc la suivante :</p>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>(P⇒Q)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>F</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>V</td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>V</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="text-align: center;"><caption>Table de vérité de « P ⇒ Q »</caption></p><br>        
+            <p>L’assertion « <strong>P ⇒ Q</strong> » se lit en français « <em>P implique Q</em> ».</p>
+            <p>Elle se lit souvent aussi « <em>si P est vraie alors Q est vraie</em> » ou « <em>si P alors Q</em> ».</p>
+        
+            <div class="example">
+                <p>Par exemple :</p>
+                <ul>
+                    <li>« <code>0 ≤ x ≤ 25 ⇒ √x ≤ 5</code> » est vraie (prendre la racine carrée).</li>
+                    <li>« <code>x ∈ ]-1, -4[ ⇒ x² + 3x - 4 > 0</code> » est vraie (étudier le binôme).</li>
+                    <li>« <code>sin(θ) = 0 ⇒ θ = 0</code> » est fausse (regarder pour <code>θ = 2π</code> par exemple).</li>
+                    <li>« <code>2 + 2 = 5 ⇒ √2 = 2</code> » est vraie ! Eh oui, si P est fausse alors l’assertion « <code>P ⇒ Q</code> » est toujours vraie.</li>
+                </ul>
+            </div>
+
+            <b>L'equivalence :</b>
+            <p>L’équivalence est définie par :</p>
+            <div class="border">
+                <p style="text-align: center;"><caption>« P ⟺ Q » est l’assertion « (P ⇒ Q) et (Q ⇒ P) ».</caption></p>
+            </div>
+            <p>On dira « P est équivalent à Q » ou « P équivaut à Q » ou « P si et seulement si Q ». Cette assertion est vraie<br>
+            lorsque P et Q sont vraies ou lorsque P et Q sont fausses. La table de vérité est :</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>(P⟺Q)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>F</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>V</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>V</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="text-align: center;"><caption>Table de vérité de « P ⟺ Q »</caption></p><br>        
+            <p>Exemples :</p>
+            <ul>
+                <li>Pour x, x0 ∈ ℝ, l’équivalence « x × x0 = 0 ⟺ (x = 0 ou x0 = 0) » est vraie.</li>
+                <li>Voici une équivalence toujours fausse (quelle que soit l’assertion P) : « P ⟺ non(P) ».</li>
+            </ul>
+            <p>On s’intéresse davantage aux assertions vraies qu’aux fausses, aussi dans la pratique et en dehors de ce<br>
+            chapitre on écrira « P ⟺ Q » ou « P ⇒ Q » uniquement lorsque ce sont des assertions vraies. Par<br>
+            exemple si l’on écrit « P ⟺ Q » cela sous-entend « P ⟺ Q est vraie ». Attention rien ne dit que P et Q<br>
+            soient vraies. Cela signifie que P et Q sont vraies en même temps ou fausses en même temps.</p>
+
+            <p>Propositions :<br>
+            Soient P, Q, R trois assertions. Nous avons les équivalences (vraies) suivantes :<br>
+                <ol>
+                    <li> P ⟺ non(non(P)) .</li>
+                    <li> (P et Q) ⟺ (Q et P).</li>
+                    <li> (P ou Q) ⟺ (Q ou P).</li>
+                    <li> non(P et Q) ⟺ (non P) ou (non Q).</li>
+                    <li> non(P ou Q) ⟺ (non P) et (non Q).</li>
+                    <li> P et (Q ou R) ⟺ (P et Q) ou (P et R).</li>
+                    <li> P ou (Q et R) ⟺ (P ou Q) et (P ou R).</li>
+                    <li> « P ⇒ Q » ⟺ « non(Q) ⇒ non(P) ».</li>
+                </ol>
+            </p>
+            <h3>1.2. Quantificateurs :</h3>
+                <h3>Le quantificateur ∀ : « pour tout »</h3>
+                <p>Une assertion P peut dépendre d’un paramètre x, par exemple « x² > 1 », l’assertion P(x) est vraie ou fausse selon la valeur de x.</p>
+                <p>L’assertion : ∀x ∈ E P(x) est une assertion vraie lorsque les assertions P(x) sont vraies pour tous les éléments x de l’ensemble E. On lit « Pour tout x appartenant à E, P(x) », sous-entendu « Pour tout x appartenant à E, P(x) est vraie ».</p>
+                <p>Par exemple :</p>
+                <ul>
+                    <li>« ∀x ∈ [1,+∞[ (x² > 1) » est une assertion vraie.</li>
+                    <li>« ∀x ∈ ℝ (x² > 1) » est une assertion fausse.</li>
+                    <li>« ∀n ∈ ℕ n(n + 1) est divisible par 2 » est vraie.</li>
+                </ul>
+                <h3>Le quantificateur ∃ : « il existe »</h3>
+                <p>L’assertion ∃x ∈ E P(x) est une assertion vraie lorsque l’on peut trouver au moins un x de E pour lequel P(x) est vraie. On lit « il existe x appartenant à E tel que P(x) (soit vraie) ».</p>
+                <p>Par exemple :</p>
+                <ul>
+                    <li>« ∃x ∈ ℝ (x(x - 1) < 0) » est vraie (par exemple x = 1/2 vérifie bien la propriété).</li>
+                    <li>« ∃n ∈ ℕ n² - n > n » est vraie (il y a plein de choix, par exemple n = 3 convient, mais aussi n = 10 ou même n = 100, un seul suffit pour dire que l’assertion est vraie).</li>
+                    <li>« ∃x ∈ ℝ (x² = -1) » est fausse (aucun réel au carré ne donnera un nombre négatif).</li>
+                </ul>
+                <h3>La négation des quantificateurs</h3>
+                <p>La négation de « ∀x ∈ E P(x) » est « ∃x ∈ E non P(x) ».</p>
+                <p>Par exemple la négation de « ∀x ∈ [1,+∞[ (x² > 1) » est l’assertion « ∃x ∈ [1,+∞[ (x² < 1) ». En effet la négation de x² > 1 est non(x² > 1) mais s’écrit plus simplement x² < 1.</p>
+                <p>La négation de « ∃x ∈ E P(x) » est « ∀x ∈ E non P(x) ».</p>
+                <p>Voici des exemples :</p>
+                <ul>
+                    <li>La négation de « ∃z ∈ ℂ (z² + z + 1 = 0) » est « ∀z ∈ ℂ (z² + z + 1 ≠ 0) ».</li>
+                    <li>La négation de « ∀x ∈ ℝ (x + 1 ∈ ℤ) » est « ∃x ∈ ℝ (x + 1 ∉ ℤ) ».</li>
+                    <li>Ce n’est pas plus difficile d’écrire la négation de phrases complexes. Pour l’assertion : ∀x ∈ ℝ ∃y > 0 (x + y > 10) sa négation est ∃x ∈ ℝ ∀y > 0 (x + y ≤ 10).</li>
+                </ul>
+                <h3>Remarques</h3>
+                <p>L’ordre des quantificateurs est très important. Par exemple les deux phrases logiques ∀x ∈ ℝ ∃y ∈ ℝ (x + y > 0) et ∃y ∈ ℝ ∀x ∈ ℝ (x + y > 0) sont différentes. La première est vraie, la seconde est fausse. En effet une phrase logique se lit de gauche à droite, ainsi la première phrase affirme « Pour tout réel x, il existe un réel y (qui peut donc dépendre de x) tel que x + y > 0. » (par exemple on peut prendre y = |x| + 1). C’est donc une phrase vraie. Par contre la deuxième se lit : « Il existe un réel y, tel que pour tout réel x, x + y > 0. » Cette phrase est fausse, cela ne peut pas être le même y qui convient pour tous les x !</p>
+                <p>On retrouve la même différence dans les phrases en français suivantes. Voici une phrase vraie « Pour toute personne, il existe un numéro de téléphone », bien sûr le numéro dépend de la personne. Par contre cette phrase est fausse : « Il existe un numéro, pour toutes les personnes ». Ce serait le même numéro pour tout le monde!</p>
+                <p>Terminons avec d’autres remarques :</p>
+                <ul>
+                    <li>Quand on écrit « ∃x ∈ ℝ (f(x) = 0) » cela signifie juste qu’il existe un réel pour lequel f s’annule. Rien ne dit que ce x est unique. Dans un premier temps vous pouvez lire la phrase ainsi : « il existe au moins un réel x tel que f(x) = 0 ». Afin de préciser que f s’annule en une unique valeur, on rajoute un point d’exclamation : ∃! x ∈ ℝ (f(x) = 0).</li>
+                    <li>Pour la négation d’une phrase logique, il n’est pas nécessaire de savoir si la phrase est fausse ou vraie. Le procédé est algorithmique : on change le « pour tout » en « il existe » et inversement, puis on prend la négation de l’assertion P.</li>
+                    <li>Pour la négation d’une proposition, il faut être précis : la négation de l’inégalité stricte « < » est l’inégalité large « ≥ », et inversement.</li>
+                    <li>Les quantificateurs ne sont pas des abréviations. Soit vous écrivez une phrase en français : « Pour tout réel x, si f(x) = 1 alors x > 0. », soit vous écrivez la phrase logique : ∀x ∈ ℝ (f(x) = 1 ⇒ x > 0). Mais surtout n’écrivez pas « ∀x réel, si f(x) = 1 ⇒ x positif ou nul ». Enfin, pour passer d’une ligne à l’autre d’un raisonnement, préférez plutôt « donc » à « ⇒ ».</li>
+                    <li>Il est défendu d’écrire ∃∀, ∀∃. Ces symboles n’existent pas !</li>
+                </ul>
+
+                <h2>2. Raisonnements :</h2>
+                    <p>Voici des méthodes classiques de raisonnements.</p>
+                    <h3>2.1. Raisonnement direct</h3>
+                    <p>On veut montrer que l’assertion « P ⇒ Q » est vraie. On suppose que P est vraie et on montre qu’alors Q est vraie. C’est la méthode à laquelle vous êtes le plus habitué.</p>
+                    <p><b>Exemple 1.</b></p>
+                    <p>Montrer que si a, b ∈ Q alors a + b ∈ Q.</p>
+                    <p><b>Démonstration.</b> Prenons a ∈ Q, b ∈ Q. Rappelons que les rationnels Q sont l’ensemble des réels s’écrivant p/q avec p ∈ Z et q ∈ N*. Alors a = p/q pour un certain p ∈ Z et un certain q ∈ N*. De même b = p'/q' avec p' ∈ Z et q' ∈ N*. Maintenant a + b = p/q + p'/q' = (pq' + qp')/(qq'). Or le numérateur pq' + qp' est bien un élément de Z; le dénominateur qq' est lui un élément de N*. Donc a + b s’écrit bien de la forme a + b = p''/q'' avec p'' ∈ Z, q'' ∈ N*. Ainsi a + b ∈ Q.</p>
+
+                    <h3>2.2. Cas par cas</h3>
+                    <p>Si l’on souhaite vérifier une assertion P(x) pour tous les x dans un ensemble E, on montre l’assertion pour les x dans une partie A de E, puis pour les x n’appartenant pas à A. C’est la méthode de disjonction ou du cas par cas.</p>
+                    <p><b>Exemple 2.</b></p>
+                    <p>Montrer que pour tout x ∈ R, |x - 1| ≤ x² - x + 1.</p>
+                    <p><b>Démonstration.</b> Soit x ∈ R. Nous distinguons deux cas.</p>
+                    <p>Premier cas : x > 1. Alors |x - 1| = x - 1. Calculons alors x² - x + 1 - |x - 1|.</p>
+                    <p>x² - x + 1 - |x - 1| = x² - x + 1 - (x - 1) = x² - 2x + 2 = (x - 1)² + 1 > 0.</p>
+                    <p>Ainsi x² - x + 1 - |x - 1| > 0 et donc x² - x + 1 > |x - 1|.</p>
+                    <p>Deuxième cas : x < 1. Alors |x - 1| = -(x - 1). Nous obtenons x² - x + 1 - |x - 1| = x² - x + 1 + (x - 1) = x² > 0.</p>
+                    <p>Et donc x² - x + 1 > |x - 1|.</p>
+                    <p><b>Conclusion.</b> Dans tous les cas |x - 1| ≤ x² - x + 1.</p>
+
+                    <h3>2.3. Contraposée</h3>
+                    <p>Le raisonnement par contraposition est basé sur l’équivalence suivante (voir la proposition 1) :</p>
+                    <p>L’assertion « P ⇒ Q » est équivalente à « non(Q) ⇒ non(P) ».</p>
+                    <p>Donc si l’on souhaite montrer l’assertion « P ⇒ Q », on montre en fait que si non(Q) est vraie alors non(P) est vraie.</p>
+                    <p><b>Exemple 3.</b></p>
+                    <p>Soit n ∈ N. Montrer que si n² est pair alors n est pair.</p>
+                    <p><b>Démonstration.</b> Nous supposons que n n’est pas pair. Nous voulons montrer qu’alors n² n’est pas pair. Comme n n’est pas pair, il est impair et donc il existe k ∈ N tel que n = 2k+1. Alors n² = (2k+1)² = 4k²+4k+1 = 2m+1 avec m = 2k² + 2k ∈ N. Et donc n² est impair.</p>
+                    <p><b>Conclusion :</b> nous avons montré que si n est impair alors n² est impair. Par contraposition ceci est équivalent à : si n² est pair alors n est pair.</p>
+
+                    <h3>2.4. Absurde</h3>
+                    <p>Le raisonnement par l’absurde pour montrer « P ⇒ Q » repose sur le principe suivant : on suppose à la fois que P est vraie et que Q est fausse et on cherche une contradiction. Ainsi si P est vraie alors Q doit être vraie et donc « P ⇒ Q » est vraie.</p>
+                    <p><b>Exemple 4.</b></p>
+                    <p>Soient a, b > 0. Montrer que si a/(1+b) = b/(1+a) alors a = b.</p>
+                    <p><b>Démonstration.</b> Nous raisonnons par l’absurde en supposant que a/(1+b) = b/(1+a) et a ≠ b. Comme a/(1+b) = b/(1+a) alors a(1+a) = b(1+b) donc a + a² = b + b² d’où a² - b² = b - a. Cela conduit à (a - b)(a + b) = -(a - b). Comme a ≠ b alors a - b ≠ 0 et donc en divisant par a - b on obtient a + b = -1. La somme des deux nombres positifs a et b ne peut être négative. Nous obtenons une contradiction.</p>
+                    <p><b>Conclusion :</b> si a/(1+b) = b/(1+a) alors a = b.</p>
+                    <p>Dans la pratique, on peut choisir indifféremment entre un raisonnement par contraposition ou par l’absurde. Attention cependant de bien préciser quel type de raisonnement vous choisissez et surtout de ne pas changer en cours de rédaction !</p>
+
+                    <h3>2.5. Contre-exemple</h3>
+                    <p>Si l’on veut montrer qu’une assertion du type « ∀x ∈ E P(x) » est vraie alors pour chaque x de E il faut montrer que P(x) est vraie. Par contre pour montrer que cette assertion est fausse alors il suffit de trouver x ∈ E tel que P(x) soit fausse. (Rappelez-vous la négation de « ∀x ∈ E P(x) » est « ∃x ∈ E non P(x) ».) Trouver un tel x c’est trouver un contre-exemple à l’assertion « ∀x ∈ E P(x) ».</p>
+                    <p><b>Exemple 5.</b></p>
+                    <p>Montrer que l’assertion suivante est fausse « Tout entier positif est somme de trois carrés ».</p>
+                    <p>(Les carrés sont les 0², 1², 2², 3²,... Par exemple 6 = 2² + 1² + 1².)</p>
+                    <p><b>Démonstration.</b> Un contre-exemple est 7 : les carrés inférieurs à 7 sont 0, 1, 4 mais avec trois de ces nombres on ne peut faire 7.</p>
+
+                    <h3>2.6. Récurrence</h3>
+                        <p>Le principe de récurrence permet de montrer qu’une assertion P(n), dépendant de n, est vraie pour tout n ∈ N. La démonstration par récurrence se déroule en trois étapes : lors de l’initialisation on prouve P(0). Pour l’étape d’hérédité, on suppose n ≥ 0 donné avec P(n) vraie, et on démontre alors que l’assertion P(n + 1) au rang suivant est vraie. Enfin dans la conclusion, on rappelle que par le principe de récurrence P(n) est vraie pour tout n ∈ N.</p>
+                        <p><b>Exemple 6.</b></p>
+                        <p>Montrer que pour tout n ∈ N, 2ⁿ > n.</p>
+                        <p><b>Démonstration.</b> Pour n ≥ 0, notons P(n) l’assertion suivante :</p>
+                        <p>2ⁿ > n.</p>
+                        <p>Nous allons démontrer par récurrence que P(n) est vraie pour tout n ≥ 0.</p>
+                        <p><b>Initialisation.</b> Pour n = 0 nous avons 2⁰ = 1 > 0. Donc P(0) est vraie.</p>
+                        <p><b>Hérédité.</b> Fixons n ≥ 0. Supposons que P(n) soit vraie. Nous allons montrer que P(n + 1) est vraie.</p>
+                        <p>2ⁿ⁺¹ = 2ⁿ + 2ⁿ > n + 2ⁿ car par P(n) nous savons 2ⁿ > n, > n + 1 car 2ⁿ > 1.</p>
+                        <p>Donc P(n + 1) est vraie.</p>
+                        <p><b>Conclusion.</b> Par le principe de récurrence P(n) est vraie pour tout n ≥ 0, c’est-à-dire 2ⁿ > n pour tout n ≥ 0.</p>
+                        <p><b>Remarques :</b></p>
+                        <ul>
+                            <li>La rédaction d’une récurrence est assez rigide. Respectez scrupuleusement la rédaction proposée : donnez un nom à l’assertion que vous souhaitez montrer (ici P(n)), respectez les trois étapes (même si souvent l’étape d’initialisation est très facile). En particulier méditez et conservez la première ligne de l’hérédité « Fixons n ≥ 0. Supposons que P(n) soit vraie. Nous allons montrer que P(n + 1) est vraie. ».</li>
+                            <li>Si on doit démontrer qu’une propriété est vraie pour tout n ≥ n₀, alors on commence l’initialisation au rang n₀.</li>
+                            <li>Le principe de récurrence est basé sur la construction de l’ensemble N. En effet un des axiomes pour définir N est le suivant : « Soit A une partie de N qui contient 0 et telle que si n ∈ A alors n + 1 ∈ A. Alors A = N ».</li>
+                        </ul>
+                    
+
+
+    </main>
+   
+    <footer class="footer">
+        <div class="footer__addr">
+            <img class="footer__logo" src="logosite.png" alt="logosite">
+            <p>Entreprise dédiée à fournir <br>des cours de mathématiques <br>en ligne de haute qualité.
+            </p>
+        </div>
+        <ul class="footer__nav" style="margin-left: -2cm;">
+            <li>
+                <div class="nav__header">
+                    <img src="gpss.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Trouverez-nous :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li>
+                        <address>34 , Tilila , 80000 , Agadir</address>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="nav__header">
+                    <img src="appel.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Appelez-nous :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li>
+                        <address>Téléphone: +212 715886768</address>
+                        <address>Email: hatafi5919@gmail.com</address>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="nav__header">
+                    <img src="email.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Envoyez-nous un mail :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li style="text-align: center;">
+                        <a class="footer__btn" href="hatafi5919@gmail.com">Email Us</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="nav__header">
+                    <img src="fleche.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Liens Utiles :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li  style="text-align: center;"><a  href="Accueil.html">Accueil</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg></li>
+                    <li style="text-align: center;"><a href="#cours">Cours</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg></li>
+                    <li style="text-align: center;"><a href="#contact">Contact</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg></li>
+                    <li style="text-align: center;"><a href="#a-propos">À propos</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2024 Cours Universitaires en Ligne | Tous droits réservés</p>
+
+            <div class="legal__links">
+                <span>Fabriqué avec <span class="heart">♥</span> .</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

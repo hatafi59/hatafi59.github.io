@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Math's planet</title>
+    <link rel="stylesheet" href="1.css">
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        textarea {
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <header>
+
+        <div class="logo">
+            <img src="logosite.png" alt="Logo du site">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <button class="button-nav" onclick="redirectTo('Accueil.html')">
+                        Accueil
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+
+                    </button>
+
+                </li>
+                <li>
+                    
+                    <div class="dropdown-container">
+                        <button class="button-nav" >
+                            Cours
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                <path
+                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <ul class="nav__ul">
+                                <li style="text-align: center;"><a href="algebrecours.html">algebre</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                        </path>
+                                    </svg>
+                                </li>
+                                <li style="text-align: center;"><a href="Analysecours.html">Analyse</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                        </path>
+                                    </svg>
+                                </li>
+
+                                <li style="text-align: center;"><a href="resumé.html">Resumé</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                        </path>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="button-nav" onclick="redirectTo('contact.html')">
+                        Contact
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="button-nav" onclick="redirectTo('a-propos.html')">
+                        À propos
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div class="button-container">
+            <button class="cssbuttons-io-button">
+                se connecter
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+
+            <button class="cssbuttons-io-button">
+                S'inscrire
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </header>
+
+
+
+
+
+
+    <main>
+        <div class="container_a_propos">
+            <h2>Nous Contacter</h2>
+            <p>
+                Vous avez des questions, des suggestions ou besoin d'assistance ? Remplissez le formulaire ci-dessous
+                pour nous contacter, et notre équipe vous répondra dans les plus brefs délais.
+            </p>
+
+
+            <form action="https://example.com/contact" method="POST">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+                <label for="subject">Sujet :</label>
+                <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+
+                <button class="cssbuttons-io-button" type="submit">Envoyer
+                    <div class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </button>
+            </form>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer__addr">
+            <img class="footer__logo" src="logosite.png" alt="logosite">
+            <p>Entreprise dédiée à fournir <br>des cours de mathématiques <br>en ligne de haute qualité.
+            </p>
+        </div>
+        <ul class="footer__nav" style="margin-left: -2cm;">
+            <li>
+                <div class="nav__header">
+                    <img src="gpss.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Trouverez-nous :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li>
+                        <address>34 , Tilila , 80000 , Agadir</address>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="nav__header">
+                    <img src="appel.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Appelez-nous :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li>
+                        <address>Téléphone: +212 715886768</address>
+                        <address>Email: hatafi5919@gmail.com</address>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="nav__header">
+                    <img src="email.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Envoyez-nous un mail :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li style="text-align: center;">
+                        <a class="footer__btn" href="hatafi5919@gmail.com">Email Us</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="nav__header">
+                    <img src="fleche.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Liens Utiles :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li style="text-align: center;"><a href="Accueil.html">Accueil</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li style="text-align: center;"><a href="#cours">Cours</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li style="text-align: center;"><a href="contact.html">Contact</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li style="text-align: center;"><a href="a-propos.html">À propos</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2024 Cours Universitaires en Ligne | Tous droits réservés</p>
+
+            <div class="legal__links">
+                <span>Fabriqué avec <span class="heart">♥</span> .</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

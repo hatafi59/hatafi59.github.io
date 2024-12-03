@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a propos - Math's planet</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <header>
+
+        <div class="logo">
+            <img src="logosite.png" alt="Logo du site">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <button class="button-nav" onclick="redirectTo('Accueil.html')">
+                        Accueil
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+
+                    </button>
+
+                </li>
+                <li>
+                    
+                    <div class="dropdown-container">
+                        <button class="button-nav" >
+                            Cours
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                <path
+                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <ul class="nav__ul">
+                                <li style="text-align: center;"><a href="algebrecours.html">algebre</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                        </path>
+                                    </svg>
+                                </li>
+                                <li style="text-align: center;"><a href="Analysecours.html">Analyse</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                        </path>
+                                    </svg>
+                                </li>
+
+                                <li style="text-align: center;"><a href="resumé.html">Resumé</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                        </path>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="button-nav" onclick="redirectTo('contact.html')">
+                        Contact
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="button-nav" onclick="redirectTo('a-propos.html')">
+                        À propos
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div class="button-container">
+            <button class="cssbuttons-io-button">
+                se connecter
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+
+            <button class="cssbuttons-io-button">
+                S'inscrire
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="container_a_propos">
+            <h2>À propos de Nous</h2>
+            <p>Bienvenue sur notre site. Nous sommes une entreprise dédiée à fournir des cours de mathématiques en ligne
+                de haute qualité. Nos cours sont conçus pour aider les étudiants de tous niveaux à améliorer leurs
+                compétences en mathématiques et à réussir leurs examens,Découvrez de nouvelles compétences et améliorez
+                votre savoir-faire en ligne grâce à des formations de qualité. Nos cours sont élaborés par des
+                spécialistes reconnus dans leurs domaines respectifs, vous garantissant ainsi un contenu pédagogique
+                riche et pertinent, conçu pour répondre aux défis actuels du marché. Que vous soyez un débutant désireux
+                d’acquérir des bases solides ou un professionnel souhaitant perfectionner ses compétences, vous
+                trouverez des formations parfaitement adaptées à votre niveau et à vos objectifs. En rejoignant notre
+                plateforme, vous accédez à une communauté dynamique d'apprenants et de form .</p>
+
+            <h2 style="text-align: center;">Nos avantages :</h2>
+            <h3>Un Apprentissage Structuré</h3>
+            <p>
+                Nos cours sont organisés sous forme de playlists interactives, vous permettant de suivre une progression
+                logique à travers les concepts d'Algèbre et d'Analyse. Chaque vidéo est conçue pour fournir une
+                explication claire, accompagnée d'exemples pratiques et d'exercices pour renforcer votre compréhension.
+            </p>
+            <h3>Qualité</h3>
+            <p>Nos cours sont conçus par des experts en mathématiques, qui ont une solide expérience dans
+                l'enseignement et la recherche. Ils sont structurés de manière à faciliter la compréhension
+                des concepts et à favoriser l'apprentissage.</p>
+            <h3>Flexibilité</h3>
+            <p>Vous pouvez accéder à nos cours à tout moment et depuis n'importe où, ce qui vous permet
+                d'étudier à votre rythme et selon vos disponibilités. Vous pouvez revoir les leçons autant
+                de fois que nécessaire pour bien assimiler les notions.</p>
+
+            <h3>Suivi</h3>
+            <p>Nous vous proposons un suivi personnalisé pour répondre à vos questions et vous aider à
+                progresser. Vous pouvez contacter nos enseignants par e-mail ou lors de sessions de tutorat
+                en ligne pour obtenir de l'aide et des conseils.</p>
+
+            <h2>Notre Mission</h2>
+            <p>Nous sommes une équipe de passionnés de mathématiques qui se sont réunis
+                pour vous offrir des cours de qualité en ligne. Notre objectif est de vous aider à comprendre les
+                concepts mathématiques avancés et à les maîtriser, afin de vous préparer au mieux pour vos examens
+                et concours.</p>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__addr">
+            <img class="footer__logo" src="logosite.png" alt="logosite">
+            <p>Entreprise dédiée à fournir <br>des cours de mathématiques <br>en ligne de haute qualité.
+            </p>
+        </div>
+        <ul class="footer__nav" style="margin-left: -2cm;">
+            <li>
+                <div class="nav__header">
+                    <img src="gpss.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Trouverez-nous :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li>
+                        <address>34 , Tilila , 80000 , Agadir</address>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="nav__header">
+                    <img src="appel.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Appelez-nous :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li>
+                        <address>Téléphone: +212 715886768</address>
+                        <address>Email: hatafi5919@gmail.com</address>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="nav__header">
+                    <img src="email.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Envoyez-nous un mail :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li style="text-align: center;">
+                        <a class="footer__btn" href="hatafi5919@gmail.com">Email Us</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="nav__header">
+                    <img src="fleche.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Liens Utiles :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li style="text-align: center;"><a href="Accueil.html">Accueil</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li style="text-align: center;"><a href="#cours">Cours</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li style="text-align: center;"><a href="contact.html">Contact</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li style="text-align: center;"><a href="a-propos.html">À propos</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2024 Cours Universitaires en Ligne | Tous droits réservés</p>
+
+            <div class="legal__links">
+                <span>Fabriqué avec <span class="heart">♥</span> .</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

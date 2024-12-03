@@ -1,0 +1,862 @@
+
+/* ------------------------------ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+    width: 150px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content:space-between;
+
+}
+nav ul li {
+    text-align: center;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+}
+
+/* -----------------btn acceuill-------------- */
+.button-nav {
+  font-size: 18px;
+  color:rgb(45, 125, 177);
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.button-nav:focus,
+.button-nav:hover {
+  color:#00274d;
+}
+
+.button-nav:focus:after,
+.button-nav:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.button-nav:after {
+  content: "";
+  font-weight: 1000;
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color:#00274d;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+  .svg-icon {
+    width: 0.9em;
+    height: 0.8em;
+    position: relative;
+    left: 0;
+    fill:rgb(45, 125, 177);
+    transform: rotate(-45deg);
+    transition: transform 0.2s ease-out;
+  }
+  
+  .button-nav:hover .svg-icon {
+    transform: rotate(0deg);
+    fill:#00274d;
+  }
+  
+/* ------------------------------------------- */
+/* Conteneur principal du dropdown */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* Menu déroulant */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  top: 100%;
+  left: 0;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+/* Liste verticale */
+.dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #00274d;
+  display: inline-block;
+  width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #e0e0e0;
+  color: #0056b3;
+}
+
+/* Affichage au survol */
+.dropdown-container:hover .dropdown-menu {
+  display: block;
+}
+
+/* ------------------------------------- */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+/* ------------------------------------------- */
+
+/* -----------------------new code ----------------- */
+.button-container {
+    display: flex; /*pour aligner les éléments enfants en ligne */
+    gap: 10px; /*ajoute un espace (gap) de 10 pixels entre eux */
+    
+}
+.cssbuttons-io-button {
+    background: rgb(45, 125, 177);
+    color: white;
+    font-family: inherit;
+    padding: 0.em;
+    padding-left: 1.2em;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em rgb(45, 125, 177);
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+    transition: transform 0.3s; /* Ajout de la transition pour le survol */
+  }
+  .cssbuttons-io-button:hover {
+    transform: scale(1.05); /* Augmente légèrement la taille du bouton */
+}
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em rgb(45, 125, 177);
+    right: 0.3em;
+    top: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: rgb(45, 125, 177);
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+  
+/* -------------------------------------------------- */
+
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.course {
+    flex: 1 1 300px; 
+    box-sizing: border-box;
+}
+table {
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+}
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+    width: 50px;
+}
+th {
+    color: rgb(45, 125, 177);
+    font-weight: bold;
+}
+td {
+    font-weight: bold;
+}
+.border {
+    border: 2px solid black;
+    width: 500px;
+    margin: 20px auto;
+}
+.indented-1cm {
+    margin-left: 1cm;
+}
+.center{
+    text-align: center;
+}
+/*------------------------------------- */
+
+
+
+
+
+.courses-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
+	justify-items: center;
+	text-align: center;
+}
+
+.course-card {
+	width: 90%;
+	max-width: 250px;
+	border: 1px solid rgb(45, 125, 177);
+	border-radius: 10px;
+	box-shadow: 0 8px 1px rgba(0, 0, 0, 0.1);
+	margin: 10px;
+	padding: 15px;
+	box-sizing: border-box;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+    transition: transform 0.3s ease; /* Ajout de la transition */
+}
+.course-card:hover {
+    transform: scale(1.05); /* Augmente la taille de la carte au survol */
+}
+
+.course-card > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.course-card >button {
+    width: 100%; /* Ajout de la largeur pour occuper toute la largeur de la carte */
+
+   
+}
+
+.course-card img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+.course-card h3 {
+	color: var(--secondary-color);
+	font-size: 1.25rem; /*3691ad*/
+	margin: 10px 0;
+    padding: 0 15px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgb(45, 125, 177); /* Ombre moins visible */}
+
+.course-card p {
+	color: #666;
+	font-size: 1rem;
+	margin-bottom: 15px;
+}
+
+.course-card .primary {
+    width: 100%;
+}
+/* ----------------------------------- */
+
+.input-group {
+    font-size: 1.25rem;
+    position: relative;
+    --primary: #f1f1f1;
+}
+.input {
+    all: unset;
+    color: #fefefe;
+    padding: 0.5em;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    transition: 150ms cubic-bezier (0.4, 0, 0.2, 1);
+}
+.label {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: #ffffff;
+    pointer-events: none;
+    transition: 150ms cubic-bezier (0.4, 0, 0.2, 1);
+}
+
+
+
+
+/* ------------accueil---- */
+.container {
+    display: flex;
+    min-height: 80vh;
+    gap: 0px;
+}
+
+/* Section gauche */
+.left-section {
+    flex: 1;
+    padding: 0px;
+    margin-top: 4%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenu principal */
+.main-content {
+    margin-left: 60px;
+    max-width: 600px;
+}
+
+h1 {
+    color: #0A3641;
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.description {
+    color: #333;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+
+/* Section droite */
+.right-section-fixed {
+    flex: 1;
+    height: 75vh;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    background-image: url('Desk.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:right; /* Centre l'image */
+    opacity: 0.9;
+    cursor: default; /* Définir le curseur par défaut */
+    pointer-events: none; /* Désactiver les événements de clic */
+ 
+
+}
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .right-section {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+}
+/* ----------------------------------- */
+.container-info {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #0A3641;
+}
+
+.content-info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.section-info {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+    
+}
+
+.text h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #00274d;
+}
+
+.text p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    width: 60%;
+    height: auto;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .section.reverse {
+        flex-direction: column;
+    }
+
+    .text h2 {
+        font-size: 1.5rem;
+    }
+
+}
+/* --------------------card alg-analuyse--------- */
+.card-alg-analyse-container{
+    display: flex; 
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+.card-alg-analyse-container>h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #0A3641;
+    text-align: center;
+}
+.card-alg-analyse {
+    width: 400px;
+    height: 254px;
+    border-radius: 20px;
+    position: relative;
+    padding: 2rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.3s ease-out;
+    overflow: visible;
+   }
+   .icon {
+    position: absolute;
+    top: 10px;  
+    right: 10px; 
+    width: 100px; 
+    height: 80px; 
+}
+   
+   .card-alg-analyse-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+   }
+   .card-alg-analyse-details>h4 {
+    font-size: 2em;
+    margin-top: 0cm;
+    font-weight:bold;
+   }
+   .card-alg-analyse-details>p {
+    color: rgb(75, 75, 75);
+    font-size: 1.1em;
+    margin-top: -1cm;
+    
+
+   }
+   
+   .card-alg-analyse-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(45, 125, 177);
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+
+   }
+   
+   
+   /*Hover*/
+   .card-alg-analyse:hover {
+    border-color: rgb(45, 125, 177);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    transform: scale(1.05); /* Augmente la taille de la carte au survol */
+
+   }
+   
+   .card-alg-analyse:hover .card-alg-analyse-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+/* ----------------------------------------------- */
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #fff;
+    border-top: 1px solid #000000;
+  }
+  
+  .footer > * {
+    flex:  1 100%;
+  }
+  
+  .footer__addr {
+    margin-left: 0%;
+    margin-bottom: 2em;
+  }
+  
+  .footer__logo {
+    height: 50px;
+    width: 150px;
+
+  }
+  
+  .footer__addr p {
+    font-family:cursive;
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 800;
+  }
+  
+  
+  
+  .footer address {
+    font-style: normal;
+    color: #999;
+  }
+  
+  .footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: #2f2f2f;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+.nav__header {
+    display: flex;
+    align-items: center;
+}
+.nav__title {
+    font-family: cursive;
+    font-weight: 800;
+    font-size: 15px;
+    margin: 0;
+  }
+  .nav__img {
+    height: 35px;
+    width: 35px;
+    border-radius: 30%;
+    margin-right: 10px; 
+}
+  
+  .footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+
+  
+  .nav__ul a {
+    color: #999;
+  }
+ 
+  
+  .nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+  }
+  
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+  }
+    
+  .legal__links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .heart {
+    color: #2f2f2f;
+  }
+  
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+    
+    .nav__item--extra {
+      flex-grow: 2;
+    }
+    
+    .footer__addr {
+      flex: 1 0px;
+    }
+    
+    .footer__nav {
+      flex: 2 0px;
+    }
+}
+/* --------------------------------------- */
+
+
+.card-alg-analyse-video-container {
+  display: flex;
+  gap: 20px; /* Espace entre les cartes */
+  margin-bottom: 10%;
+}
+
+.card-alg-analyse-video {
+  width: 500px; /* Définir la largeur fixe de la carte */
+  height: 250px; /* Limite la hauteur de la carte */
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid #c3c6ce;
+  overflow: hidden;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.card-alg-analyse-video h3 {
+  color: #0A3641;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgb(237, 223, 174);
+  margin-top: var(--primary);
+}
+
+.card-alg-analyse-video:hover {
+  box-shadow: 0 4px 18px 0 rgb(140, 157, 168);
+  transform: scale(1.02);
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-alg-analyse-video:hover .video-overlay {
+  opacity: 1;
+}
+
+.play-button {
+  background-color: red;
+  border: none;
+  border-radius: 20%;
+  width: 68px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.play-button::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 16px;
+  border-color: transparent transparent transparent white;
+  margin-left: 5px;
+}
+
+
+/* ------------------- */
+
+.math-course-description {
+    margin: 2px auto;
+    width: 90%;  /* Limite la largeur pour ne pas être trop large */
+    border-radius: 10px;  /* Bords arrondis pour un effet moderne */
+    line-height: 1.6;  /* Améliore l'espacement entre les lignes pour une lecture plus fluide */
+    text-align: justify;  /* Justifie le texte pour un alignement soigné */
+    color: rgb(75, 75, 75);
+    margin-bottom: 10%;
+}
+
+.math-course-description p {
+    font-size: 1.1em;  /* Taille de police un peu plus grande pour un meilleur confort de lecture */
+    margin-top: 10px;
+}
+/* ----------------------------- */
+.container_a_propos {
+  max-width: 950px;
+  margin: 2em auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+.container_a_propos >h2 {
+  text-align: center;
+  color: #0A3641;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.container_a_propos >p {
+  margin: 1em 0;
+  font-size: 1.1em;
+  color: rgb(75, 75, 75);
+  text-align: justify;
+}
+/* ------------------------------- */
+.book {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

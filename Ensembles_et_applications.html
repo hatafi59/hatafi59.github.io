@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours Universitaires en Ligne</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <header>
+
+        <div class="logo">
+            <img src="logosite.png" alt="Logo du site">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <button class="button-nav" onclick="redirectTo('Accueil.html')">
+                        Accueil
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+
+                    </button>
+
+                </li>
+                <li>
+                    
+                    <div class="dropdown-container">
+                        <button class="button-nav" >
+                            Cours
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                <path
+                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <ul class="nav__ul">
+                                <li style="text-align: center;"><a href="algebrecours.html">algebre</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                        </path>
+                                    </svg>
+                                </li>
+                                <li style="text-align: center;"><a href="Analysecours.html">Analyse</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                        </path>
+                                    </svg>
+                                </li>
+
+                                <li style="text-align: center;"><a href="resumé.html">Resumé</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                        </path>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="button-nav" onclick="redirectTo('Accueil.html')">
+                        Contact
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="button-nav" onclick="redirectTo('Accueil.html')">
+                        À propos
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div class="button-container">
+            <button class="cssbuttons-io-button">
+                se connecter
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+
+            <button class="cssbuttons-io-button">
+                S'inscrire
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </header>
+    <main>
+        <h1 class="center">Ensembles et applications</h1>
+        <p style="text-indent: 2em;">Nous allons essayer de voir les propriétés des ensembles, sans s’attacher à un exemple particulier. Vous
+                vous apercevrez assez rapidement que ce qui est au moins aussi important que les ensembles, ce sont les
+                relations entre ensembles : ce sera la notion d’application (ou fonction) entre deux ensembles.</p> 
+        <h2>1. Ensembles</h2>
+        <h3>1.1. Définir des ensembles</h3>
+        <ul>
+            <li>On va définir informellement ce qu’est un ensemble : un ensemble est une collection d’éléments.</li>
+            <li>Exemples :
+                <ul>
+                    <li>{0, 1}, {rouge, noir}, {0, 1, 2, 3, ...} = N.</li>
+                </ul>
+            </li>
+            <li>Un ensemble particulier est l’ensemble vide, noté ∅ qui est l’ensemble ne contenant aucun élément.</li>
+            <li>On note
+                <ul>
+                    <li>x ∈ E si x est un élément de E, et x ∉ E dans le cas contraire.</li>
+                </ul>
+            </li>
+            <li>Voici une autre façon de définir des ensembles : une collection d’éléments qui vérifient une propriété.</li>
+            <li>Exemples :
+                <ul>
+                    <li>{x ∈ R | |x - 2| < 1}</li>
+                    <li>{z ∈ C | z⁵ = 1}</li>
+                    <li>{x ∈ R | 0 ≤ x ≤ 1} = [0, 1]</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>1.2. Inclusion, union, intersection, complémentaire</h3>
+        <ul>
+            <li><b>L’inclusion.</b> E ⊆ F si tout élément de E est aussi un élément de F. Autrement dit : ∀x ∈ E (x ∈ F). On dit alors que E est un sous-ensemble de F ou une partie de F.</li>
+            <li><b>L’égalité.</b> E = F si et seulement si E ⊆ F et F ⊆ E.</li>
+            <li><b>Ensemble des parties de E.</b> On note P(E) l’ensemble des parties de E. Par exemple si E = {1, 2, 3} :
+                <ul>
+                    <li>P({1, 2, 3}) = {∅, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}}</li>
+                </ul>
+            </li>
+            <li><b>Complémentaire.</b> Si A ⊆ E,
+                <ul>
+                    <li>E \ A = {x ∈ E | x ∉ A}</li>
+                </ul>
+                On le note aussi E \ A et juste Aᶜ s’il n’y a pas d’ambiguïté (et parfois aussi Ac ou A).
+            </li>
+            <li><b>Union.</b> Pour A, B ⊆ E,
+                <ul>
+                    <li>A ∪ B = {x ∈ E | x ∈ A ou x ∈ B}</li>
+                </ul>
+                Le « ou » n’est pas exclusif : x peut appartenir à A et à B en même temps.
+            </li>
+            <li><b>Intersection.</b> Pour A, B ⊆ E,
+                <ul>
+                    <li>A ∩ B = {x ∈ E | x ∈ A et x ∈ B}</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>1.3. Règles de calculs</h3>
+        <p>Soient A, B, C des parties d’un ensemble E.</p>
+        <ul>
+            <li>A ∩ B = B ∩ A</li>
+            <li>A ∩ (B ∩ C) = (A ∩ B) ∩ C (on peut donc écrire A ∩ B ∩ C sans ambigüité)</li>
+            <li>A ∩ ∅ = ∅, A ∩ A = A, A ⊆ B ⇔ A ∩ B = A</li>
+            <li>A ∪ B = B ∪ A</li>
+            <li>A ∪ (B ∪ C) = (A ∪ B) ∪ C (on peut donc écrire A ∪ B ∪ C sans ambiguïté)</li>
+            <li>A ∪ ∅ = A, A ∪ A = A, A ⊆ B ⇔ A ∪ B = B</li>
+            <li>A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)</li>
+            <li>A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)</li>
+            <li>¬(¬A) = A et donc A ⊆ B ⇔ ¬B ⊆ ¬A</li>
+            <li>¬(A ∩ B) = ¬A ∪ ¬B</li>
+            <li>¬(A ∪ B) = ¬A ∩ ¬B</li>
+        </ul>
+        <p>Les preuves sont pour l’essentiel une reformulation des opérateurs logiques, en voici quelques-unes :</p>
+        <ul>
+            <li>Preuve de A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) :
+                <ul>
+                    <li>x ∈ A ∩ (B ∪ C) ⇔ x ∈ A et x ∈ (B ∪ C)</li>
+                        ⇔ x ∈ A et (x ∈ B ou x ∈ C)<br>
+                        ⇔ (x ∈ A et x ∈ B) ou (x ∈ A et x ∈ C)<br>
+                        ⇔ (x ∈ A ∩ B) ou (x ∈ A ∩ C)<br>
+                        ⇔ x ∈ (A ∩ B) ∪ (A ∩ C)
+                </ul>
+            </li>
+            <li>Preuve de ¬(A ∩ B) = ¬A ∪ ¬B :
+                <ul>
+                    <li>x ∈ ¬(A ∩ B) ⇔ x ∉ (A ∩ B)</li>
+                    ⇔ non (x ∈ A ∩ B)<br>
+                    ⇔ non (x ∈ A et x ∈ B)<br>
+                    ⇔ non (x ∈ A) ou non (x ∈ B)<br>
+                    ⇔ x ∉ A ou x ∉ B<br>
+                    ⇔ x ∈ ¬A ∪ ¬B
+                </ul>
+                Remarquez que l’on repasse aux éléments pour les preuves.
+            </li>
+        </ul>
+        <h3>1.4. Produit cartésien</h3>
+        <p>Soient E et F deux ensembles. Le produit cartésien, noté E × F, est l’ensemble des couples (x, y) où x ∈ E et y ∈ F.</p>
+        <p>Exemple 1.</p>
+        <ul>
+            <li>Vous connaissez R² = R × R = {(x, y) | x, y ∈ R}.</li>
+            <li>Autre exemple [0, 1] × R = {(x, y) | 0 ≤ x ≤ 1, y ∈ R}.</li>
+        <div class="center"> <svg width="200" height="300" xmlns="http://www.w3.org/2000/svg" style="background-color: #fff;">
+            <line x1="40" y1="260" x2="180" y2="260" stroke="black" stroke-width="2" />
+            <text x="185" y="265" font-size="12">x</text>
+            <line x1="40" y1="260" x2="40" y2="100" stroke="black" stroke-width="2" />
+            <text x="35" y="95" font-size="12">y</text>
+            <rect x="40" y="120" width="100" height="140" fill="orange" opacity="0.4" />
+            <circle cx="40" cy="260" r="4" fill="red" />
+            <text x="30" y="275" font-size="12">0</text>
+            <circle cx="140" cy="260" r="4" fill="red" />
+            <text x="130" y="275" font-size="12">1</text>
+            <circle cx="40" cy="120" r="4" fill="red" />
+            <text x="15" y="125" font-size="12"></text>
+        </svg></div>
+            <li>[0, 1] × [0, 1] × [0, 1] = {(x, y, z) | 0 ≤ x, y, z ≤ 1}.</li>
+        </ul>
+        <h2>2. Applications</h2>
+        <h3>2.1. Définitions</h3>
+        <p>Une application (ou une fonction) f : E → F, c’est la donnée pour chaque élément x ∈ E d’un unique élément de F noté f(x).</p>
+        <p>Nous représenterons les applications par deux types d’illustrations : les ensembles « patates », l’ensemble de départ (et celui d’arrivée) est schématisé par un ovale ses éléments par des points. L’association x ↦ f(x) est représentée par une flèche.</p>
+        <p>L’autre représentation est celle des fonctions continues de R dans R (ou des sous-ensembles de R).<br>
+        L’ensemble de départ R est représenté par l’axe des abscisses et celui d’arrivée par l’axe des ordonnées. L’association x ↦ f(x) est représentée par le point (x, f(x)).</p>
+        <p>• Égalité. Deux applications f, g : E → F sont égales si et seulement si pour tout x ∈ E, f(x) = g(x). On note alors f = g.<br>
+        • Le graphe de f : E → F est 
+            <math>
+                <mi>Γf = {(x, f(x)) ∈ E × F | x ∈ E}</mi>
+            </math>
+        </p>
+        <p>• Composition. Soient f : E → F et g : F → G alors g ∘ f : E → G est l’application définie par (g ∘ f)(x) = g(f(x)).</p>
+        <p>Exemple 2.</p>
+        <ul>
+            <li>L’identité, id<sub>E</sub> : E → E est simplement définie par x ↦ x et sera très utile dans la suite.</li>
+        </ul>
+        <p>2. Définissons f, g ainsi :</p>
+        <ul>
+            <li>f : ]0, +∞[ → ]0, +∞[<br>
+                x ↦ 1/x
+            </li>
+            <li>g : ]0, +∞[ → R<br>
+                x ↦ (x - 1) / (x + 1)
+            </li>
+        </ul>
+        <p>Alors g ∘ f : ]0, +∞[ → R vérifie pour tout x ∈ ]0, +∞[ :</p>
+        <p>(g ∘ f)(x) = g(f(x)) = g(1/x) = (1/x - 1) / (1/x + 1) = (1 - x) / (1 + x) = -g(x).</p>
+        <h3>2.2. Image directe, image réciproque</h3>
+        <p>Soient E, F deux ensembles.</p>
+        <p><strong>Définition 1.</strong><br>
+        Soit A ⊆ E et f : E → F, l’image directe de A par f est l’ensemble<br>
+        f(A) = { f(x) | x ∈ A }
+        </p>
+        <p><strong>Définition 2.</strong><br>
+            Soit B ⊆ F et f : E → F, l’image réciproque de B par f est l’ensemble<br>
+            f<sup>-1</sup>(B) = { x ∈ E | f(x) ∈ B }
+            </p>
+            <p><strong>Remarque.</strong><br>
+                Ces notions sont plus difficiles à maîtriser qu’il n’y paraît !</p>
+                <ul>
+                    <li>f(A) est un sous-ensemble de F, f<sup>-1</sup>(B) est un sous-ensemble de E.</li>
+                    <li>La notation « f<sup>-1</sup>(B) » est un tout, rien ne dit que f est une fonction bijective (voir plus loin). L’image réciproque existe quelque soit la fonction.</li>
+                    <li>L’image directe d’un singleton f({x}) = {f(x)} est un singleton. Par contre l’image réciproque d’un singleton f<sup>-1</sup>({y}) dépend de f. Cela peut être un singleton, un ensemble à plusieurs éléments ; mais cela peut-être E tout entier (si f est une fonction constante) ou même l’ensemble vide (si aucune image par f ne vaut y).</li>
+                </ul>
+                <h3>2.3. Antécédents</h3>
+                <p>Fixons y ∈ F. Tout élément x ∈ E tel que f(x) = y est un antécédent de y.<br>
+                En termes d’image réciproque, l’ensemble des antécédents de y est f<sup>-1</sup>({y}).</p>
+                <h2>3. Injection, surjection, bijection</h2>
+                <h3>3.1. Injection, surjection</h3>
+                <p>Soit E, F deux ensembles et f : E → F une application.</p>
+                <p><strong>Définition 3.</strong><br>
+                f est injective si pour tout x, x' ∈ E avec f(x) = f(x'), alors x = x'. Autrement dit :<br>
+                ∀x, x' ∈ E, (f(x) = f(x') ⇒ x = x')
+                </p>
+                <p><strong>Définition 4.</strong><br>
+                f est surjective si pour tout y ∈ F, il existe x ∈ E tel que y = f(x). Autrement dit :<br>
+                ∀y ∈ F, ∃x ∈ E, (y = f(x))<br>
+                Une autre formulation : f est surjective si et seulement si f(E) = F.
+                </p>
+                <p><strong>Remarque.</strong><br>
+                    Encore une fois ce sont des notions difficiles à appréhender. Une autre façon de formuler l’injectivité et la surjectivité est d’utiliser les antécédents.</p>
+                    <ul>
+                        <li>f est injective si et seulement si tout élément y de F a au plus un antécédent (et éventuellement aucun).</li>
+                        <li>f est surjective si et seulement si tout élément y de F a au moins un antécédent.</li>
+                    </ul>
+                    <p><strong>Exemple 3.</strong></p>
+                    <ol>
+                        <li>Soit f<sub>1</sub> : ℕ → ℚ définie par f<sub>1</sub>(x) = 1 / (1 + x). Montrons que f<sub>1</sub> est injective : soit x, x' ∈ ℕ tels que f<sub>1</sub>(x) = f<sub>1</sub>(x'). Alors 1 / (1 + x) = 1 / (1 + x'), donc 1 + x = 1 + x' et donc x = x'. Ainsi f<sub>1</sub> est injective.<br>
+                        Par contre f<sub>1</sub> n’est pas surjective. Il s’agit de trouver un élément y qui n’a pas d’antécédent par f<sub>1</sub>. Ici il est facile de voir que l’on a toujours f<sub>1</sub>(x) ≤ 1 et donc par exemple y = 2 n’a pas d’antécédent. Ainsi f<sub>1</sub> n’est pas surjective.</li>
+                        <li>Soit f<sub>2</sub> : ℤ → ℕ définie par f<sub>2</sub>(x) = x<sup>2</sup>. Alors f<sub>2</sub> n’est pas injective. En effet on peut trouver deux éléments x, x' ∈ ℤ différents tels que f<sub>2</sub>(x) = f<sub>2</sub>(x'). Il suffit de prendre par exemple x = 2, x' = -2.<br>
+                        f<sub>2</sub> n’est pas non plus surjective, en effet il existe des éléments y ∈ ℕ qui n’ont aucun antécédent. Par exemple y = 3 : si y = 3 avait un antécédent x par f<sub>2</sub>, nous aurions f<sub>2</sub>(x) = y, c’est-à-dire x<sup>2</sup> = 3, d’où x = √3. Mais alors x n’est pas un entier de ℤ. Donc y = 3 n’a pas d’antécédent et f<sub>2</sub> n’est pas surjective.</li>
+                    </ol>
+                    <h3>3.2. Bijection</h3>
+                    <p><strong>Définition 5.</strong><br>
+                    f est bijective si elle est injective et surjective. Cela équivaut à : pour tout y ∈ F il existe un unique x ∈ E tel que y = f(x). Autrement dit :<br>
+                    ∀y ∈ F, ∃!x ∈ E (y = f(x))<br>
+                    L’existence du x vient de la surjectivité et l’unicité de l’injectivité. Autrement dit, tout élément de F a un unique antécédent par f.
+                    </p>
+                    <b>Proposition 1.</b>
+                    <p>Soit E, F des ensembles et f : E → F une application.</p>
+                    <ol>
+                        <li>L’application f est bijective si et seulement si il existe une application g : F → E telle que f ∘ g = id<sub>F</sub> et g ∘ f = id<sub>E</sub>.</li>
+                        <li>Si f est bijective alors l’application g est unique et elle aussi est bijective. L’application g s’appelle la bijection réciproque de f et est notée f<sup>-1</sup>. De plus (f<sup>-1</sup>)<sup>-1</sup> = f.</li>
+                    </ol>
+                    <p><strong>Remarque.</strong></p>
+                    <ul>
+                        <li>f ∘ g = id<sub>F</sub> se reformule ainsi ∀y ∈ F, f(g(y)) = y.</li>
+                        <li>Alors que g ∘ f = id<sub>E</sub> s’écrit : ∀x ∈ E, g(f(x)) = x.</li>
+                        <li>Par exemple f : ℝ → ]0,+∞[ définie par f(x) = exp(x) est bijective, sa bijection réciproque est g : ]0,+∞[ → ℝ définie par g(y) = ln(y). Nous avons bien exp(ln(y)) = y, pour tout y ∈ ]0,+∞[ et ln(exp(x)) = x, pour tout x ∈ ℝ.</li>
+                    </ul>
+                    <b>proposition 2.</b>
+                    <p>Soient f : E → F et g : F → G des applications bijectives. L’application g ∘ f est bijective et sa bijection réciproque est (g ∘ f)<sup>-1</sup> = f<sup>-1</sup> ∘ g<sup>-1</sup>.</p>
+                    <h2>4. Ensembles finis</h2>
+                    <h3>4.1. Cardinal</h3>
+                    <p><strong>Définition 6.</strong><br>
+                    Un ensemble E est fini s’il existe un entier n ∈ ℕ et une bijection de E vers {1, 2, ..., n}. Cet entier n est unique et s’appelle le cardinal de E (ou le nombre d’éléments) et est noté Card(E).</p>
+                    <p>Quelques exemples :</p>
+                    <ol>
+                        <li>E = {rouge, noir} est en bijection avec {1, 2} et donc est de cardinal 2.</li>
+                        <li>ℕ n’est pas un ensemble fini.</li>
+                        <li>Par définition, le cardinal de l’ensemble vide est 0.</li>
+                    </ol>
+                    <p>Enfin quelques propriétés :</p>
+                    <ol>
+                        <li>Si A est un ensemble fini et B ⊆ A alors B est aussi un ensemble fini et Card(B) ≤ Card(A).</li>
+                        <li>Si A, B sont des ensembles finis disjoints (c’est-à-dire A ∩ B = ∅) alors Card(A ∪ B) = Card(A) + Card(B).</li>
+                        <li>Si A est un ensemble fini et B ⊆ A alors Card(A \ B) = Card(A) - Card(B). En particulier, si B ⊆ A et Card(A) = Card(B) alors A = B.</li>
+                        <li>Enfin pour A, B deux ensembles finis quelconques : Card(A ∪ B) = Card(A) + Card(B) - Card(A ∩ B).</li>
+                    </ol>
+                    <p>La preuve de la dernière propriété utilise la décomposition A ∪ B = A ∪ (B \ (A ∩ B)).<br> Les ensembles A et B \ (A ∩ B) sont disjoints,<br> donc Card(A ∪ B) = Card(A) + Card(B \ (A ∩ B)) = Card(A) + Card(B) - Card(A ∩ B) par la propriété 2, puis la propriété 3.</p>
+                    <h3>4.2. Injection, surjection, bijection et ensembles finis</h3>
+                    <p><strong>Proposition 3.</strong><br>
+                    Soit E, F deux ensembles finis et f : E → F une application.</p>
+                    <ol>
+                        <li>Si f est injective alors Card(E) ≤ Card(F).</li>
+                        <li>Si f est surjective alors Card(E) ≥ Card(F).</li>
+                        <li>Si f est bijective alors Card(E) = Card(F).</li>
+                    </ol>
+                    <p><strong>Démonstration.</strong></p>
+                    <ol>
+                        <li>Supposons f injective. Notons F<sub>0</sub> = f(E) ⊆ F alors la restriction f<sub>j</sub> : E → F<sub>0</sub> (définie par f<sub>j</sub>(x) = f(x)) est une bijection. Donc pour chaque y ∈ F<sub>0</sub> est associé un unique x ∈ E tel que y = f(x). Donc E et F<sub>0</sub> ont le même nombre d’éléments. Donc Card(F<sub>0</sub>) = Card(E). Or F<sub>0</sub> ⊆ F, ainsi Card(E) = Card(F<sub>0</sub>) ≤ Card(F).</li>
+                        <li>Supposons f surjective. Pour tout élément y ∈ F, il existe au moins un élément x de E tel que y = f(x) et donc Card(E) ≥ Card(F).</li>
+                        <li>Cela découle de (1) et (2) (ou aussi de la preuve du (1)).</li>
+                    </ol>
+                    <p><strong>Proposition 4.</strong><br>
+                    Soit E, F deux ensembles finis et f : E → F une application. Si Card(E) = Card(F) alors les assertions suivantes sont équivalentes :</p>
+                    <ol>
+                        <li>f est injective,</li>
+                        <li>f est surjective,</li>
+                        <li>f est bijective.</li>
+                    </ol>
+                    <p><strong>Démonstration.</strong> Le schéma de la preuve est le suivant : nous allons montrer successivement les implications : (i) ⇒ (ii) ⇒ (iii) ⇒ (i) ce qui prouvera bien toutes les équivalences.</p>
+                    <ul>
+                        <li>(i) ⇒ (ii). Supposons f injective. Alors Card(f(E)) = Card(E) = Card(F). Ainsi f(E) est un sous-ensemble de F ayant le même cardinal que F ; cela entraîne f(E) = F et donc f est surjective.</li>
+                        <li>(ii) ⇒ (iii). Supposons f surjective. Pour montrer que f est bijective, il reste à montrer que f est injective. Raisonnons par l’absurde et supposons f non injective. Alors Card(f(E)) < Card(E) (car au moins 2 éléments ont la même image). Or f(E) = F car f surjective, donc Card(F) < Card(E). C’est une contradiction, donc f doit être injective et ainsi f est bijective.</li>
+                        <li>(iii) ⇒ (i). C’est clair : une fonction bijective est en particulier injective.</li>
+                    </ul>
+                    <p>Appliquez ceci pour montrer le principe des tiroirs :</p>
+                    <p><strong>Proposition 5.</strong><br>
+                    Si l’on range dans k tiroirs, n > k paires de chaussettes alors il existe (au moins) un tiroir contenant (au moins) deux paires de chaussettes.</p>
+                    <p>Malgré sa formulation amusante, c’est une proposition souvent utile. Exemple : dans un amphi de 400 étudiants, il y a au moins deux étudiants nés le même jour !</p>
+                    <h3>4.3. Nombres d’applications</h3>
+                    <p>Soient E, F des ensembles finis, non vides. On note Card E = n et Card F = p.</p>
+                    <p><strong>Proposition 6.</strong><br>
+                    Le nombre d’applications différentes de E dans F est : p<sup>n</sup><br>
+                    Autrement dit c’est (Card F)<sup>Card E</sup>.</p>
+                    <p><strong>Exemple 4.</strong><br>
+                    En particulier le nombre d’applications de E dans lui-même est n<sup>n</sup>. Par exemple si E = {1, 2, 3, 4, 5} alors ce nombre est 5<sup>5</sup> = 3125.</p>
+                    <p><strong>Démonstration.</strong> Fixons F et p = Card F. Nous allons effectuer une récurrence sur n = Card E. Soit (P<sub>n</sub>) l’assertion suivante : le nombre d’applications d’un ensemble à n éléments vers un ensemble à p éléments est p<sup>n</sup>.</p>
+                    <ul>
+                        <li><strong>Initialisation.</strong> Pour n = 1, une application de E dans F est définie par l’image de l’unique élément de E. Il y a p = Card F choix possibles et donc p<sup>1</sup> applications distinctes. Ainsi P<sub>1</sub> est vraie.</li>
+                        <li><strong>Hérédité.</strong> Fixons n > 1 et supposons que P<sub>n</sub> est vraie. Soit E un ensemble à n + 1 éléments. On choisit et fixe a ∈ E ; soit alors E' = E \ {a} qui a bien n éléments. Le nombre d’applications de E' vers F est p<sup>n</sup>, par l’hypothèse de récurrence (P<sub>n</sub>). Pour chaque application f : E' → F on peut la prolonger en une application f : E → F en choisissant l’image de a. On a p choix pour l’image de a et donc p<sup>n</sup> * p choix pour les applications de E vers F. Ainsi P<sub>n+1</sub> est vérifiée.</li>
+                        <li><strong>Conclusion.</strong> Par le principe de récurrence P<sub>n</sub> est vraie, pour tout n ≥ 1.</li>
+                    </ul>
+                    <p><strong>Proposition 7.</strong><br>
+                    Le nombre d’injections de E dans F est : p * (p - 1) * ... * (p - (n - 1)).</p>
+                    <p><strong>Démonstration.</strong> Supposons E = {a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub>}; pour l’image de a<sub>1</sub> nous avons p choix. Une fois ce choix fait, pour l’image de a<sub>2</sub> il reste p - 1 choix (car a<sub>2</sub> ne doit pas avoir la même image que a<sub>1</sub>). Pour l’image de a<sub>3</sub> il y a p - 2 possibilités. Ainsi de suite : pour l’image de a<sub>k</sub> il y a p - (k - 1) choix... Il y a au final p * (p - 1) * ... * (p - (n - 1)) applications injectives.</p>
+                    <p>Notation factorielle : n! = 1 * 2 * 3 * ... * n. Avec 1! = 1 et par convention 0! = 1.</p>
+                    <p><strong>Proposition 8.</strong><br>
+                    Le nombre de bijections d’un ensemble E de cardinal n dans lui-même est : n!</p>
+                    <p><strong>Exemple 5.</strong><br>
+                    Parmi les 3125 applications de {1, 2, 3, 4, 5} dans lui-même il y en a 5! = 120 qui sont bijectives.</p>
+                    <p><strong>Démonstration.</strong> Nous allons le prouver par récurrence sur n. Soit (P<sub>n</sub>) l’assertion suivante : le nombre de bijections d’un ensemble à n éléments dans un ensemble à n éléments est n!</p>
+                    <ul>
+                        <li>P<sub>1</sub> est vraie. Il n’y a qu’une bijection d’un ensemble à 1 élément dans un ensemble à 1 élément.</li>
+                        <li>Fixons n > 1 et supposons que P<sub>n</sub> est vraie. Soit E un ensemble à n + 1 éléments. On fixe a ∈ E. Pour chaque b ∈ E il y a –par l’hypothèse de récurrence– exactement n! applications bijectives de E \ {a} → E \ {b}. Chaque application se prolonge en une bijection de E → F en posant a ↦ b. Comme il y a n + 1 choix de b ∈ E alors nous obtenons n! * (n + 1) bijections de E dans lui-même. Ainsi P<sub>n+1</sub> est vraie.</li>
+                        <li>Par le principe de récurrence le nombre de bijections d’un ensemble à n éléments est n!</li>
+                    </ul>
+                    <p>On aurait aussi pu directement utiliser la proposition 7 avec n = p (sachant qu’alors les injections sont aussi des bijections).</p>
+                    <h3>4.4. Nombres de sous-ensembles</h3>
+                    <p>Soit E un ensemble fini de cardinal n.</p>
+                    <p><strong>Proposition 9.</strong><br>
+                    Il y a 2<sup>Card E</sup> sous-ensembles de E :<br>
+                    CardP(E) = 2<sup>n</sup></p>
+                    <p><strong>Exemple 6.</strong><br>
+                    Si E = {1, 2, 3, 4, 5} alors P(E) a 2<sup>5</sup> = 32 parties. C’est un bon exercice de les énumérer :</p>
+                    <ul>
+                        <li>l’ensemble vide : ∅,</li>
+                        <li>5 singletons : {1}, {2}, ..., {5},</li>
+                        <li>10 paires : {1, 2}, {1, 3}, ..., {2, 3}, ...,</li>
+                        <li>10 triplets : {1, 2, 3}, ...,</li>
+                        <li>5 ensembles à 4 éléments : {1, 2, 3, 4}, {1, 2, 3, 5}, ...,</li>
+                        <li>et E tout entier : {1, 2, 3, 4, 5}.</li>
+                    </ul>
+                    <p><strong>Démonstration.</strong> Encore une récurrence sur n = Card E.</p>
+                    <ul>
+                        <li><strong>Initialisation.</strong> Si n = 1, E = {a} est un singleton, les deux sous-ensembles sont : ∅ et E.</li>
+                        <li><strong>Hérédité.</strong> Supposons que la proposition soit vraie pour n > 1 fixé. Soit E un ensemble à n + 1 éléments. On fixe a ∈ E. Il y a deux sortes de sous-ensembles de E :
+                            <ul>
+                                <li>les sous-ensembles A qui ne contiennent pas a : ce sont les sous-ensembles A ⊆ E \ {a}. Par l’hypothèse de récurrence il y en a 2<sup>n</sup>.</li>
+                                <li>les sous-ensembles A qui contiennent a : ils sont de la forme A = {a} ∪ A' avec A' ⊆ E \ {a}. Par l’hypothèse de récurrence il y a 2<sup>n</sup> sous-ensembles A' possibles et donc aussi 2<sup>n</sup> sous-ensembles A.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Conclusion.</strong> Le bilan : 2<sup>n</sup> + 2<sup>n</sup> = 2<sup>n+1</sup> parties A ⊆ E.</li>
+                    </ul>
+                    <p>Par le principe de récurrence, nous avons prouvé que si Card E = n alors on a CardP(E) = 2<sup>n</sup>.</p>
+                    <h3>4.5. Coefficients du binôme de Newton </h3>
+<p><strong>Définition 7.</strong> Le nombre de parties à k éléments d’un ensemble à n éléments est noté  C(n, k)  ou  C_k^n .</p>
+<p><strong>Exemple 7.</strong> Les parties à deux éléments de {1, 2, 3} sont {1, 2}, {1, 3} et {2, 3} et donc  C(3, 2) = 3 . Nous avons déjà classé les parties de {1, 2, 3, 4, 5} par nombre d’éléments et donc :</p>
+<ul>
+    <li> C(5, 0) = 1  (la seule partie n’ayant aucun élément est l’ensemble vide),</li>
+    <li> C(5, 1) = 5  (il y a 5 singletons),</li>
+    <li> C(5, 2) = 10  (il y a 10 paires),</li>
+    <li> C(5, 3) = 10 ,</li>
+    <li> C(5, 4) = 5 ,</li>
+    <li> C(5, 5) = 1  (la seule partie ayant 5 éléments est l’ensemble tout entier).</li>
+</ul>
+<p>Sans calculs on peut déjà remarquer les faits suivants :</p>
+<p><strong>Proposition 10.</strong></p>
+<ul>
+    <li> C(n, 0) = 1 ,  C(n, 1) = n ,  C(n, n) = 1 .</li>
+    <li> C(n, n-k) = C(n, k) </li>
+    <li> C(n, 0) + C(n, 1) + ... + C(n, k) + ... + C(n, n) = 2^n </li>
+</ul>
+<p><strong>Démonstration.</strong></p>
+<ol>
+    <li>Par exemple :  C(n, 1) = n  car il y a n singletons.</li>
+    <li>Compter le nombre de parties A ⊆ E ayant k éléments revient aussi à compter le nombre de parties de la forme E \ A (qui ont donc n - k éléments), ainsi  C(n, n-k) = C(n, k) .</li>
+    <li>La formule  C(n, 0) + C(n, 1) + ... + C(n, k) + ... + C(n, n) = 2^n  exprime que faire la somme du nombre de parties à k éléments, pour k = 0, ..., n, revient à compter toutes les parties de E.</li>
+</ol>
+<p><strong>Proposition 11.</strong></p>
+<p> C(n, k) = C(n-1, k) + C(n-1, k-1)  (0 &lt; k &lt; n)</p>
+<p><strong>Démonstration.</strong> Soit E un ensemble à n éléments, a ∈ E et E' = E \ {a}. Il y a deux sortes de parties A ⊆ E ayant k éléments :</p>
+<ul>
+    <li>celles qui ne contiennent pas a : ce sont donc des parties à k éléments dans E' qui a n - 1 éléments. Il y en a donc  C(n-1, k) ,</li>
+    <li>celles qui contiennent a : elles sont de la forme A = {a} ∪ A' avec A' une partie à k - 1 éléments dans E' qui a n - 1 éléments. Il y en a  C(n-1, k-1) .</li>
+</ul>
+<p>Bilan :  C(n, k) = C(n-1, k-1) + C(n-1, k) .</p>
+<p>Le triangle de Pascal est un algorithme pour calculer ces coefficients  C(n, k) . La ligne du haut correspond à  C(0, 0) , la ligne suivante à  C(1, 0)  et  C(1, 1) , la ligne d’après à  C(2, 0) ,  C(2, 1)  et  C(2, 2) . La dernière ligne du triangle de gauche aux coefficients  C(4, 0) ,  C(4, 1) , ...,  C(4, 4) .</p>
+<p>Comment continuer ce triangle pour obtenir le triangle de droite ? Chaque élément de la nouvelle ligne est obtenu en ajoutant les deux nombres qui lui sont au-dessus à droite et au-dessus à gauche.</p>
+<pre>
+1
+1 1
+1 2 1
+1 3 3 1
+1 4 6 4 1
+1
+1 1
+1 2 1
+1 3 3 1
+1 4 6 4 1
+1 5 10 10 5 1
+</pre>
+<p>Ce qui fait que cela fonctionne c’est bien sûr la proposition 11 qui se représente ainsi :</p>
+<pre>
+C(n-1, k-1)  C(n-1, k)
+      \      /
+       \    /
+      C(n, k)
+</pre>
+<p>Une autre façon de calculer le coefficient du binôme de Newton repose sur la formule suivante :</p>
+<p><strong>Proposition 12.</strong></p>
+<p> C(n, k) = \frac{n!}{k!(n - k)!} </p>
+<h4>4.6. Formule du binôme de Newton</h4>
+<p><strong>Théorème 1.</strong></p>
+<p>Soient a, b ∈ ℝ et n un entier positif alors :</p>
+<div >
+    \[
+    (a + b)^n = \sum_{k=0}^n \binom{n}{k} a^{n-k} b^k
+    \]
+</div>
+<p>Autrement dit :</p>
+<div>
+    \[
+    (a + b)^n = \binom{n}{0} a^n b^0 + \binom{n}{1} a^{n-1} b^1 + \cdots + \binom{n}{k} a^{n-k} b^k + \cdots + \binom{n}{n} a^0 b^n
+    \]
+</div>
+<p>Le théorème est aussi vrai si a et b sont des nombres complexes.</p>
+<p><strong>Exemple 8.</strong></p>
+<ol>
+    <li>Pour n = 2, on retrouve la formule archi-connue :  (a + b)^2 = a^2 + 2ab + b^2.</li>
+    <li>Il est aussi bon de connaître  (a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3 .</li>
+    <li>Si a = 1 et b = 1, on retrouve la formule :  \[\sum_{k=0}^{n} \binom{n}{k} = 2^n\] .</li>
+</ol>
+<p><strong>Démonstration.</strong> Nous allons effectuer une récurrence sur n. Soit (P<sub>n</sub>) l’assertion : \[(a + b)^n=\sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k\].</p>
+<ul>
+    <li><strong>Initialisation.</strong> Pour n = 1,  \[(a + b)^1 = \binom{1}{0} a^1 b^0 + \binom{1}{1} a^0 b^1\] . Ainsi P<sub>1</sub> est vraie.</li>
+    <li><strong>Hérédité.</strong> Fixons n > 2 et supposons que P<sub>n-1</sub> est vraie.
+        <p> \[(a + b)^n = (a + b) \cdot (a + b)^{n-1} = a \left( \sum_{k=0}^{n-1} \binom{n-1}{k} a^{n-1-k} b^k \right) + b \left( \sum_{k=0}^{n-1} \binom{n-1}{k} a^{n-1-k} b^k \right)\] </p>
+        <p> \[= \sum_{k=0}^{n-1} \binom{n-1}{k} a^{n-k} b^k + \sum_{k=0}^{n-1} \binom{n-1}{k} a^{n-1-k} b^{k+1} \]</p>
+        <p> \[= \sum_{k=0}^{n} \left( \binom{n-1}{k} + \binom{n-1}{k-1} \right) a^{n-k} b^k = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k \]</p>
+        <p>Ainsi P<sub>n</sub> est vérifiée.</p>
+    </li>
+</ul>
+<p><strong>Conclusion.</strong> Par le principe de récurrence, P<sub>n</sub> est vraie pour tout n ≥ 1.</p>
+<h2>Relation d’équivalence</h2>
+<h3>5.1. Définition</h3>
+<p>Une relation sur un ensemble E, c’est la donnée pour tout couple (x, y) ∈ E × E de « Vrai » (s’ils sont en relation), ou de « Faux » sinon.</p>
+<p>Nous schématisons une relation ainsi : les éléments de E sont des points, une flèche de x vers y signifie que x est en relation avec y, c’est-à-dire que l’on associe « Vrai » au couple (x, y).</p>
+<h3>Définition 8</h3>
+<p>Soit E un ensemble et R une relation, c’est une relation d’équivalence si :</p>
+<ul>
+    <li>Pour tout x ∈ E, xRx (réflexivité)</li>
+    <li>Pour tout x, y ∈ E, xRy implique yRx (symétrie)</li>
+    <li>Pour tout x, y, z ∈ E, xRy et yRz impliquent xRz (transitivité)</li>
+</ul>
+<h3>5.2. Exemples</h3>
+<h4>Exemple 9</h4>
+<p>Voici des exemples basiques :</p>
+<ul>
+    <li>La relation R « être parallèle » est une relation d’équivalence pour l’ensemble E des droites affines du plan :
+        <ul>
+            <li>réflexivité : une droite est parallèle à elle-même,</li>
+            <li>symétrie : si D est parallèle à D' alors D' est parallèle à D,</li>
+            <li>transitivité : si D est parallèle à D' et D' est parallèle à D'', alors D est parallèle à D''.</li>
+        </ul>
+    </li>
+    <li>La relation « être du même âge » est une relation d’équivalence.</li>
+    <li>La relation « être perpendiculaire » n’est pas une relation d’équivalence (ni la réflexivité, ni la transitivité ne sont vérifiées).</li>
+    <li>La relation « être différent » (sur E = R par exemple) n’est pas une relation d’équivalence (la symétrie n'est pas verifiée).</li>
+</ul>
+<h3>5.3. Classes d’équivalence</h3>
+<h4>Définition 9</h4>
+<p>Soit R une relation d’équivalence sur un ensemble E. Soit x ∈ E, la classe d’équivalence de x est définie par :</p>
+<p>cl(x) = { y ∈ E | yRx }</p>
+<p>cl(x) est donc un sous-ensemble de E, on le note aussi [x]. Si y ∈ cl(x), on dit que y est un représentant de cl(x).</p>
+<p>Soit E un ensemble et R une relation d’équivalence.</p>
+<h4>Proposition 13</h4>
+<p>On a les propriétés suivantes :</p>
+<ol>
+    <li>cl(x) = cl(y) ⇔ xRy.</li>
+    <li>Pour tout x, y ∈ E, cl(x) = cl(y) ou cl(x) ∩ cl(y) = ∅.</li>
+    <li>Soit C un ensemble de représentants de toutes les classes alors { cl(x) | x ∈ C } constitue une partition de E.</li>
+</ol>
+<p>Une partition de E est un ensemble {E<sub>i</sub>} de parties de E tel que E = ∪ E<sub>i</sub> et E<sub>i</sub> ∩ E<sub>j</sub> = ∅ (si i ≠ j).</p>
+<h3>5.4. L’ensemble Z/nZ</h3>
+<p>Soit n > 2 un entier fixé. Définissons la relation suivante sur l’ensemble E = Z :</p>
+<p>a ≡ b (mod n) ⇔ a - b est un multiple de n</p>
+<p>Exemples pour n = 7 : 10 ≡ 3 (mod 7), 19 ≡ 5 (mod 7), 77 ≡ 0 (mod 7), -1 ≡ 20 (mod 7).</p>
+<p>Cette relation est bien une relation d’équivalence :</p>
+<ul>
+    <li>Pour tout a ∈ Z, a - a = 0 = 0 * n est un multiple de n donc a ≡ a (mod n).</li>
+    <li>Pour a, b ∈ Z tels que a ≡ b (mod n) alors a - b est un multiple de n, autrement dit il existe k ∈ Z tel que a - b = kn et donc b - a = (-k)n et ainsi b ≡ a (mod n).</li>
+    <li>Si a ≡ b (mod n) et b ≡ c (mod n) alors il existe k, k' ∈ Z tels que a - b = kn et b - c = k'n. Alors a - c = (a - b) + (b - c) = (k + k')n et donc a ≡ c (mod n).</li>
+</ul>
+<p>La classe d’équivalence de a ∈ Z est notée [a]. Par définition nous avons donc :</p>
+<p>[a] = cl(a) = { b ∈ Z | b ≡ a (mod n) }</p>
+<p>Comme un tel b s’écrit b = a + kn pour un certain k ∈ Z alors c’est aussi exactement :</p>
+<p>[a] = a + nZ = { a + kn | k ∈ Z }</p>
+<p>Comme n ≡ 0 (mod n), n + 1 ≡ 1 (mod n), ..., alors :</p>
+<p>n ≡ 0, n + 1 ≡ 1, n + 2 ≡ 2, ...</p>
+<p>et donc l’ensemble des classes d’équivalence est l’ensemble :</p>
+<p>Z/nZ = { 0, 1, 2, ..., n - 1 }</p>
+<p>qui contient exactement n éléments.</p>
+<p>Par exemple, pour n = 7 :</p>
+<ul>
+    <li>[0] = { ..., -14, -7, 0, 7, 14, 21, ... } = 7Z</li>
+    <li>[1] = { ..., -13, -6, 1, 8, 15, ... } = 1 + 7Z</li>
+    <li>...</li>
+    <li>[6] = { ..., -8, -1, 6, 13, 20, ... } = 6 + 7Z</li>
+</ul>
+<p>Mais ensuite [7] = { ..., -7, 0, 7, 14, 21, ... } = [0] = 7Z. Ainsi Z/7Z = { 0, 1, 2, ..., 6 } possède 7 éléments.</p>
+<p><b>Remarque :</b> Dans beaucoup de situations de la vie courante, nous raisonnons avec les modulos. Par exemple pour l’heure : les minutes et les secondes sont modulo 60 (après 59 minutes on repart à zéro), les heures modulo 24 (ou modulo 12 sur le cadran à aiguilles). Les jours de la semaine sont modulo 7, les mois modulo 12, ...</p>
+
+
+
+
+
+
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__addr">
+            <img class="footer__logo" src="logosite.png" alt="logosite">
+            <p>Entreprise dédiée à fournir <br>des cours de mathématiques <br>en ligne de haute qualité.
+            </p>
+        </div>
+        <ul class="footer__nav" style="margin-left: -2cm;">
+            <li>
+                <div class="nav__header">
+                    <img src="gpss.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Trouverez-nous :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li>
+                        <address>34 , Tilila , 80000 , Agadir</address>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="nav__header">
+                    <img src="appel.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Appelez-nous :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li>
+                        <address>Téléphone: +212 715886768</address>
+                        <address>Email: hatafi5919@gmail.com</address>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="nav__header">
+                    <img src="email.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Envoyez-nous un mail :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li style="text-align: center;">
+                        <a class="footer__btn" href="hatafi5919@gmail.com">Email Us</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="nav__header">
+                    <img src="fleche.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Liens Utiles :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li  style="text-align: center;"><a  href="Accueil.html">Accueil</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg></li>
+                    <li style="text-align: center;"><a href="#cours">Cours</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg></li>
+                    <li style="text-align: center;"><a href="#contact">Contact</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg></li>
+                    <li style="text-align: center;"><a href="#a-propos">À propos</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2024 Cours Universitaires en Ligne | Tous droits réservés</p>
+
+            <div class="legal__links">
+                <span>Fabriqué avec <span class="heart">♥</span> .</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

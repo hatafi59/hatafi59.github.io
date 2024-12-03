@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours Algébre </title>
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <header>
+
+        <div class="logo">
+            <img src="logosite.png" alt="Logo du site">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <button class="button-nav" onclick="redirectTo('Accueil.html')">
+                        Accueil
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+
+                    </button>
+
+                </li>
+                <li>
+
+                    <div class="dropdown-container">
+                        <button class="button-nav">
+                            Cours
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                <path
+                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <ul class="nav__ul">
+                                <li style="text-align: center;"><a href="algebrecours.html">algebre</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                        </path>
+                                    </svg>
+                                </li>
+                                <li style="text-align: center;"><a href="Analysecours.html">Analyse</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                        </path>
+                                    </svg>
+                                </li>
+
+                                <li style="text-align: center;"><a href="resumé.html">Resumé</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                        </path>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="button-nav" onclick="redirectTo('Accueil.html')">
+                        Contact
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="button-nav" onclick="redirectTo('Accueil.html')">
+                        À propos
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div class="button-container">
+            <button class="cssbuttons-io-button">
+                se connecter
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+
+            <button class="cssbuttons-io-button">
+                S'inscrire
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </header>
+    <main>
+        
+        <section id="cours">
+            <h2 style="text-align: center;">Nos Cours d'Algèbre:</h2>
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                <div class="course-card" id="card-algebre">
+                    <h3 style="text-align: center;">Logique et Raisonnements</h3>
+                    <img src="logique_et_raisonnements.png" alt="Logique et Raisonnements">
+                    <button class="cssbuttons-io-button" onclick="redirectTo('logique_et_raisonnements.html')">
+                        Voir le cours
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="course-card" id="card-algebre">
+                    <h3 style="text-align: center;">Ensembles et Applications</h3>
+                    <img src="ensembles.png" alt="Ensembles et Applications">
+                    <button class="cssbuttons-io-button" onclick="redirectTo('Ensembles_et_Applications.html')">
+                        Voir le cours
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <div class="course-card" id="card-nombres-complexes">
+                    <h3 style="text-align: center;">Nombres Complexes</h3>
+                    <img src="nombres_complexes.png" alt="Nombres Complexes">
+                    <button class="cssbuttons-io-button" onclick="redirectTo('Nombres_Complexes.html')">
+                        Voir le cours
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="course-card" id="card-arithmetique">
+                    <h3 style="text-align: center;">Arithmétique</h3>
+                    <img src="arithmétique.png" alt="Arithmétique">
+                    <button class="cssbuttons-io-button" onclick="redirectTo('Arithmetique.html')">
+                        Voir le cours
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="course-card" id="card-polynomes">
+                    <h3 style="text-align: center;">Polynômes</h3>
+                    <img src="polynomes.png" alt="Polynômes">
+                    <button class="cssbuttons-io-button" onclick="redirectTo('Polynomes.html')">
+                        Voir le cours
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="course-card" id="card-groupes">
+                    <h3 style="text-align: center;">Groupes</h3>
+                    <img src="groupes.png" alt="Groupes">
+                    <button class="cssbuttons-io-button" onclick="redirectTo('Groupes.html')">
+                        Voir le cours
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="course-card" id="card-systemes-lineaires">
+                    <h3 style="text-align: center;">Systèmes Linéaires</h3>
+                    <img src="systeme.png" alt="Systèmes Linéaires">
+                    <button class="cssbuttons-io-button" onclick="redirectTo('Systemes_Lineaires.html')">
+                        Voir le cours
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="course-card" id="card-determinants">
+                    <h3 style="text-align: center;">Déterminants</h3>
+                    <img src="determinat.png" alt="Déterminants">
+                    <button class="cssbuttons-io-button" onclick="redirectTo('Determinants.html')">
+                        Voir le cours
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__addr">
+            <img class="footer__logo" src="logosite.png" alt="logosite">
+            <p>Entreprise dédiée à fournir <br>des cours de mathématiques <br>en ligne de haute qualité.
+            </p>
+        </div>
+        <ul class="footer__nav" style="margin-left: -2cm;">
+            <li>
+                <div class="nav__header">
+                    <img src="gpss.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Trouverez-nous :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li>
+                        <address>34 , Tilila , 80000 , Agadir</address>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="nav__header">
+                    <img src="appel.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Appelez-nous :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li>
+                        <address>Téléphone: +212 715886768</address>
+                        <address>Email: hatafi5919@gmail.com</address>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="nav__header">
+                    <img src="email.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Envoyez-nous un mail :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li style="text-align: center;">
+                        <a class="footer__btn" href="hatafi5919@gmail.com">Email Us</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="nav__header">
+                    <img src="fleche.png" alt="localisation" class="nav__img">
+                    <h2 class="nav__title">Liens Utiles :</h2>
+                </div>
+                <ul class="nav__ul">
+                    <li style="text-align: center;"><a href="Accueil.html">Accueil</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li style="text-align: center;"><a href="#cours">Cours</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li style="text-align: center;"><a href="#contact">Contact</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li style="text-align: center;"><a href="#a-propos">À propos</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2024 Cours Universitaires en Ligne | Tous droits réservés</p>
+
+            <div class="legal__links">
+                <span>Fabriqué avec <span class="heart">♥</span> .</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
