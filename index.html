@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cours Algébre </title>
+    <title>Math's planet</title>
     <link rel="stylesheet" href="1.css">
 </head>
 
@@ -32,7 +32,7 @@
                 <li>
 
                     <div class="dropdown-container">
-                        <button class="button-nav">
+                        <button class="button-nav" >
                             Cours
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
                                 <path
@@ -67,9 +67,12 @@
                             </ul>
                         </div>
                     </div>
+
+
+
                 </li>
                 <li>
-                    <button class="button-nav" onclick="redirectTo('index.html')">
+                    <button class="button-nav" onclick="redirectTo('contact.html')">
                         Contact
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
                             <path
@@ -79,7 +82,7 @@
                     </button>
                 </li>
                 <li>
-                    <button class="button-nav" onclick="redirectTo('index.html')">
+                    <button class="button-nav" onclick="redirectTo('a-propos.html')">
                         À propos
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
                             <path
@@ -91,7 +94,7 @@
             </ul>
         </nav>
         <div class="button-container">
-            <button class="cssbuttons-io-button">
+            <button class="cssbuttons-io-button" onclick="redirectTo('inscription.html')">
                 se connecter
                 <div class="icon">
                     <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +105,7 @@
                 </div>
             </button>
 
-            <button class="cssbuttons-io-button">
+            <button class="cssbuttons-io-button" onclick="redirectTo('inscription.html')">
                 S'inscrire
                 <div class="icon">
                     <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -115,144 +118,177 @@
         </div>
     </header>
     <main>
-        
-        <section id="cours">
-            <h2 style="text-align: center;">Nos Cours d'Algèbre:</h2>
-            <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-                <div class="course-card" id="card-algebre">
-                    <h3 style="text-align: center;">Logique et Raisonnements</h3>
-                    <img src="logique_et_raisonnements.png" alt="Logique et Raisonnements">
-                    <button class="cssbuttons-io-button" onclick="redirectTo('logique_et_raisonnements.html')">
-                        Voir le cours
-                        <div class="icon">
-                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </div>
-                    </button>
-                </div>
 
-                <div class="course-card" id="card-algebre">
-                    <h3 style="text-align: center;">Ensembles et Applications</h3>
-                    <img src="ensembles.png" alt="Ensembles et Applications">
-                    <button class="cssbuttons-io-button" onclick="redirectTo('Ensembles_et_Applications.html')">
-                        Voir le cours
-                        <div class="icon">
-                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </div>
-                    </button>
+        <div id="accueil" class="container">
+            <div class="left-section">
+                <div class="main-content">
+                    <h1>Le savoir est une lumière qui guide dans l'obscurité.</h1>
+                    <p class="description">Rejoignez-nous dès maintenant pour approfondir vos connaissances en
+                        mathématiques avancées grâce à des cours conçus par des experts. Progressez à votre rythme et
+                        atteignez vos objectifs académiques avec nous !</p>
                 </div>
-                <div class="course-card" id="card-nombres-complexes">
-                    <h3 style="text-align: center;">Nombres Complexes</h3>
-                    <img src="nombres_complexes.png" alt="Nombres Complexes">
-                    <button class="cssbuttons-io-button" onclick="redirectTo('Nombres_Complexes.html')">
-                        Voir le cours
-                        <div class="icon">
-                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </div>
-                    </button>
-                </div>
+            </div>
+            <div class="right-section-fixed"> </div>
+        </div>
 
-                <div class="course-card" id="card-arithmetique">
-                    <h3 style="text-align: center;">Arithmétique</h3>
-                    <img src="arithmétique.png" alt="Arithmétique">
-                    <button class="cssbuttons-io-button" onclick="redirectTo('Arithmetique.html')">
-                        Voir le cours
-                        <div class="icon">
-                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </div>
-                    </button>
+        <h2 style="text-align: center; color: #0A3641;  font-weight: 600;  font-size: 2.5rem;">Nos Cours ecrits :</h2>
+        <section class="card-alg-analyse-container" id="cours">
+            <div class="card-alg-analyse" id="card-algebre">
+                <div class="card-alg-analyse-details">
+                    <img src="icon_algebre.png" alt="algebre_icon" class="icon">
+                    <h4>Algébre 1</h4>
+                    <p>Ce cours d'algèbre est divisé en deux parties. La première couvre les bases de la logique
+                        et
+                        des ensembles, suivies de l'étude des nombres complexes, des entiers, et des polynômes,
+                        et
+                        introduit la structure de groupe. La seconde partie se concentre sur l'algèbre linéaire,
+                        abordant les notions de matrices et d'espaces vectoriels, des concepts profonds qui
+                        nécessitent du temps pour être maîtrisés.</p>
                 </div>
-
-                <div class="course-card" id="card-polynomes">
-                    <h3 style="text-align: center;">Polynômes</h3>
-                    <img src="polynomes.png" alt="Polynômes">
-                    <button class="cssbuttons-io-button" onclick="redirectTo('Polynomes.html')">
-                        Voir le cours
-                        <div class="icon">
-                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </div>
-                    </button>
+                <button class="card-alg-analyse-button" onclick="redirectTo('algebrecours.html')">Voir plus</button>
+            </div>
+            <div class="card-alg-analyse" id="card-analyse">
+                <div class="card-alg-analyse-details">
+                    <img src="iconanalyse.png" alt="analyse_icon" class="icon"
+                        style="width: 70px; height: 60px ;margin-top: 2%;margin-right: 2%;">
+                    <h4>Analyse 1</h4>
+                    <p>Ce cours commence par l'étude des nombres réels et des suites, puis aborde les fonctions
+                        avec
+                        les notions de limite, continuité et dérivabilité, accompagnées de démonstrations et de
+                        représentations graphiques pour faciliter la compréhension. En fin de volume, il explore
+                        les
+                        applications aux courbes paramétrées et aux équations différentielles.</p>
                 </div>
-
-                <div class="course-card" id="card-groupes">
-                    <h3 style="text-align: center;">Groupes</h3>
-                    <img src="groupes.png" alt="Groupes">
-                    <button class="cssbuttons-io-button" onclick="redirectTo('Groupes.html')">
-                        Voir le cours
-                        <div class="icon">
-                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </div>
-                    </button>
-                </div>
-
-                <div class="course-card" id="card-systemes-lineaires">
-                    <h3 style="text-align: center;">Systèmes Linéaires</h3>
-                    <img src="systeme.png" alt="Systèmes Linéaires">
-                    <button class="cssbuttons-io-button" onclick="redirectTo('Systemes_Lineaires.html')">
-                        Voir le cours
-                        <div class="icon">
-                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </div>
-                    </button>
-                </div>
-
-                <div class="course-card" id="card-determinants">
-                    <h3 style="text-align: center;">Déterminants</h3>
-                    <img src="determinat.png" alt="Déterminants">
-                    <button class="cssbuttons-io-button" onclick="redirectTo('Determinants.html')">
-                        Voir le cours
-                        <div class="icon">
-                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </div>
-                    </button>
-                </div>
-
+                <button class="card-alg-analyse-button">Voir plus</button>
             </div>
         </section>
 
 
 
-    </main>
 
+        <h2 style="text-align: center; color: #0A3641;  font-weight: 600;  font-size: 2.5rem;">Nos Cours ulistratifs :
+        </h2>
+        <div class="math-course-description">
+            <p>
+                Découvrez une série complète de cours en vidéo sur l'Algèbre et l'Analyse, présentée sous forme de
+                playlists interactives. Ces vidéos couvrent des sujets essentiels de manière claire et concise,
+                parfaites pour approfondir vos connaissances et réviser efficacement. Chaque playlist est complète et
+                vous permet de suivre l'intégralité du programme, avec de nouvelles vidéos à venir pour enrichir les
+                autres playlists au fur et à mesure de leur progression. En attendant les ajouts futurs, profitez
+                pleinement des ressources déjà disponibles pour une expérience d'apprentissage fluide et complète.
+            </p>
+        </div>
+        <div class="card-alg-analyse-video-container">
+            <div class="card-alg-analyse-video"
+                onclick="redirectTo('https://www.youtube.com/watch?v=aWSe1fjJHEM&list=PL8CE6188299CCFA23')">
+                <h3>Logique et Raisonnements</h3>
+                <div class="video-thumbnail">
+                    <img src="images/images_videos/logique.jpg" alt="LOgique et raisonnements">
+                </div>
+                <div class="video-overlay">
+                    <div class="play-button"></div>
+                </div>
+            </div>
+            <div class="card-alg-analyse-video"
+                onclick="redirectTo('https://www.youtube.com/watch?v=utABzdEXLuE&list=PLDE14ADCB2510048B')">
+                <h3>Nombres Complexes</h3>
+                <div class="video-thumbnail">
+                    <img src="images/images_videos/NombreComp.png" alt="Analyse 1">
+                </div>
+                <div class="video-overlay">
+                    <div class="play-button"></div>
+                </div>
+            </div>
+            <div class="card-alg-analyse-video"
+                onclick="redirectTo('https://www.youtube.com/watch?v=l8ZaQUjM5h8&list=PL024XGD7WCIHb3odpeugIJ9SiKXOyH2TB')">
+                <h3>Fonctions usuelles</h3>
+                <div class="video-thumbnail">
+                    <img src="images/images_videos/fct.jpg" alt="Algèbre 2">
+                </div>
+                <div class="video-overlay">
+                    <div class="play-button"></div>
+                </div>
+            </div>
+            <div class="card-alg-analyse-video"
+                onclick="redirectTo('https://www.youtube.com/watch?v=qXDhD4y_GtQ&list=PL8ACBA51760D782A8')">
+                <h3>Intégrales</h3>
+                <div class="video-thumbnail">
+                    <img src="images/images_videos/integrale.png" alt="Analyse 2">
+                </div>
+                <div class="video-overlay">
+                    <div class="play-button"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <h1 class="main-title">Pourquoi nous choisir ?</h1>
+        <section style="background-color:rgb(244, 252, 255) ; height: 10cm;">
+            <section class="container-info" id="Pourquoi nous choisir">
+                <div class="content-info">
+                    <div class="section-info">
+                        <div class="text" style=" margin-top: 1cm;">
+                            <h2 style="text-align: center;">Cours et Exercices Écrits Interactifs <br></h2>
+                            <p style="text-indent: 20px;">Nos cours d'algèbre et d'analyse vous offrent des explications
+                                détaillées sur des sujets clés comme les équations, les matrices, les dérivées et les
+                                intégrales.</p>
+                            <p style="text-indent: 20px;">Chaque leçon est accompagnée d'exemples écrits clairs et
+                                d'exercices pratiques pour renforcer votre compréhension. Ces ressources vous permettent
+                                d'apprendre efficacement à votre propre rythme. </p>
+                        </div>
+                        <div class="image">
+                            <img src="note_book.png" alt="cours ecrits">
+                        </div>
+                    </div>
+            </section>
+        </section>
+        <section class="container-info" style="height: 10cm;">
+            <div class="section-info" style=" margin-top: 0.5cm; ">
+                <div class="image">
+                    <img src="Computer.gif" alt="cours en videos" style="width: 400px;height:350px;">
+                </div>
+                <div class="text">
+                    <h2>Cours de Mathématiques en Vidéo<br></h2>
+                    <p>Les cours sont aussi disponibles sous forme de vidéos interactives, vous permettant
+                        d'apprendre directement à partir de démonstrations visuelles. Vous explorerez des
+                        concepts
+                        essentiels tels que les équations, les matrices, les dérivées et les intégrales,
+                        expliqués
+                        de manière claire et détaillée par nos experts. </p>
+                </div>
+            </div>
+        </section>
+        <section style="background-color:rgb(244, 252, 255) ;height: 10cm;">
+            <section class="container-info">
+                <div class="section-info">
+                    <div class="text">
+                        <h2 style="text-align: center;">Atteignez Vos Objectifs et Excellez en Mathématiques<br>
+                        </h2>
+                        <p style="text-indent: 20px;">Ces ressources vous permettront non seulement d'exceller dans
+                            vos études ou votre carrière, mais aussi d'aller plus loin dans votre apprentissage avec
+                            confiance et efficacité </p>
+                    </div>
+                    <div class="image" style=" margin-top: -1cm;">
+                        <img src="graduation.png" alt="succés">
+                    </div>
+                </div>
+                </div>
+            </section>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
     <footer class="footer">
         <div class="footer__addr">
             <img class="footer__logo" src="logosite.png" alt="logosite">
@@ -314,14 +350,14 @@
                             </path>
                         </svg>
                     </li>
-                    <li style="text-align: center;"><a href="#contact">Contact</a>
+                    <li style="text-align: center;"><a href="contact.html">Contact</a>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
                             <path
                                 d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
                             </path>
                         </svg>
                     </li>
-                    <li style="text-align: center;"><a href="#a-propos">À propos</a>
+                    <li style="text-align: center;"><a href="a-propos.html">À propos</a>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-icon">
                             <path
                                 d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
